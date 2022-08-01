@@ -38,12 +38,12 @@ public class JavaJobs {
         System.out.println("To make sure you are allowed to apply, lets take a quick test");
 
         System.out.print("What is your age?: ");
-        int age;
+        int age = scan.nextInt();
 
-        System.out.println("Have you had or have experience with Java");
+        System.out.println("Have you had or have experience with Java (yes/no)");
         String exp = scan.nextLine();
 
-
+        if ()
 
         return true;
     }
