@@ -35,6 +35,7 @@ public class JavaJobs {
 
     public static boolean applyJobAllowed() {
         Scanner scan = new Scanner(System.in);
+        
         System.out.println("To make sure you are allowed to apply, lets take a quick test");
 
         System.out.print("What is your age?: ");
@@ -48,6 +49,7 @@ public class JavaJobs {
         } else {
             return true;
         }
+
     }
 
 }
