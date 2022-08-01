@@ -46,13 +46,19 @@ public class JavaJobs {
 
         if (age < 15 ||!exp.contains("y")){
             System.out.println("You are not eligible to apply!");
+            scan.close();
             return false;
         } else {
+            scan.close();
             return true;
         }
+
+        
     }
 
     public static void apply(){
+        Scanner scan = new Scanner(System.in);
+
         System.out.println("Here are the jobs that we have available: ");
         System.out.println("\t- Game Developer,  200k year (type a)");
         System.out.println("\t- Course Developer, 150k year (type b)");
@@ -62,6 +68,17 @@ public class JavaJobs {
         System.out.println("\t- App Developer, 200k year (type f)");
         System.out.println("\t- OS Developer, 350k year (type g)");
         System.out.println("\t- OS Designer, 250k year (type h)");
+
+        String jobOption = scan.nextLine();
+
+        switch(jobOption) {
+            case "a": 
+        }
+
+
+
+
+        scan.close();
     }
 
     
