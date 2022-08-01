@@ -23,7 +23,7 @@ public class JavaJobs {
                     apply();
                 
                 }
-            
+        
                 break;
             case "b": break;
             case "c": break;
