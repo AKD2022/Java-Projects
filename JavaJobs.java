@@ -97,7 +97,17 @@ public class JavaJobs {
                 System.out.println("We are sorry, but you are not eligible for this job.");
                 System.exit(0);
             } else if (requirement.contains("ye")) {
-                System.out.println();
+                System.out.println("Since we do not know if you are telling the truth or not, you must answer this question correctly: ");
+
+                System.out.println("\tWhat is one part of a basic structure for developing a game?");
+                String checking = scan.nextLine();
+
+                if (checking.contains("The game interface") || checking.contains("The implementation of the interface") || checking.contains("The game source code")){
+                    System.out.println("Good job! You are hired! Your check will be mailed to the address you type in: ");
+                    String address = scan.nextLine();
+
+                    System.out.println("Every month we will mail a check of $" + (200000/12) + " to " + address);
+                }
             }
             
 
