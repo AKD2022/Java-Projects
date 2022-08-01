@@ -48,6 +48,8 @@ public class JavaJobs {
         } else {
             return true;
         }
+
+        scan.close();
     }
 
 }
