@@ -27,7 +27,7 @@ public class JavaJobs {
     }
 
     public static void applyJob() {
-        System.out.println();
+        System.out.println("To make sure you are allowed to apply, lets take a quick test");
     }
 
 }
