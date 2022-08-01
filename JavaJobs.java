@@ -88,14 +88,20 @@ public class JavaJobs {
             System.out.println("\t- Knowledge of the latest gaming trends");
             System.out.println("\t- Strong artistic and technical skills.");
 
+            //Asking if meets requirments
             System.out.print("Do you meet all of these requirments?: ");
             String requirement = scan.nextLine();
 
+            //Checking 
             if (!requirement.contains("y")) {
                 System.out.println("We are sorry, but you are not eligible for this job.");
                 System.exit(0);
+            } else if (requirement.contains("ye")) {
+                System.out.println();
             }
             
+
+
             break;
             case "b": break;
             case "c": break;
