@@ -15,6 +15,10 @@ public class JavaJobs {
         System.out.println("\t- Learn about Java (type d)");
         String option = scan.nextLine();
 
+        switch(option) {
+            
+        }
+
 
         scan.close();
     }
