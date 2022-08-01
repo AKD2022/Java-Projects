@@ -54,7 +54,7 @@ public class JavaJobs {
 
     public static void apply(){
         System.out.println("Here are the jobs that we have available: ");
-        System.out.println("\t- ");
+        System.out.println("\t- Game Developer,  200k year");
     }
 
     
