@@ -63,18 +63,24 @@ public class JavaJobs {
 
         System.out.println("Here are the jobs that we have available: ");
         System.out.println("\t- Game Developer,  200k year (type a)");
-        System.out.println("\t- Course Developer, 150k year (type b)");
-        System.out.println("\t- Java Web Developer, 125k year (type c)");
-        System.out.println("\t- Basic Java Developer, 90k year (type d)");
-        System.out.println("\t- App Designer, 150k year (type e)");
-        System.out.println("\t- App Developer, 200k year (type f)");
-        System.out.println("\t- OS Developer, 350k year (type g)");
-        System.out.println("\t- OS Designer, 250k year (type h)");
+        System.out.println("\t- Game Designer, 150k year (type b)");
+        System.out.println("\t- Course Developer, 150k year (type c)");
+        System.out.println("\t- Java Web Developer, 125k year (type d)");
+        System.out.println("\t- Basic Java Developer, 90k year (type e)");
+        System.out.println("\t- App Designer, 150k year (type f)");
+        System.out.println("\t- App Developer, 200k year (type g)");
+        System.out.println("\t- OS Developer, 350k year (type h)");
+        System.out.println("\t- OS Designer, 250k year (type i)");
 
         String jobOption = scan.nextLine();
 
         switch(jobOption) {
-            case "a": break;
+            //Game Developer
+            case "a": 
+            System.out.println("Here are the requriments you need to become a game developer: ");
+            System.out.println("\t- Bachelor's degree in software engineering or computer science");
+            
+            break;
             case "b": break;
             case "c": break;
             case "d": break;
@@ -82,6 +88,7 @@ public class JavaJobs {
             case "f": break;
             case "g": break;
             case "h": break;
+            case "i": break;
         }
 
 
