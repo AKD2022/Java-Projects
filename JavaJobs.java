@@ -43,9 +43,11 @@ public class JavaJobs {
         System.out.println("Have you had or have experience with Java (yes/no)");
         String exp = scan.nextLine();
 
-        if ()
-
-        return true;
+        if (age < 15 ||!exp.contains("y")){
+            return false;
+        } else {
+            return true;
+        }
     }
 
 }
