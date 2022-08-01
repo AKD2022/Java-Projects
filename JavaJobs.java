@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class JavaJobs {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         System.out.println("********************************");
         System.out.println("************JAVA JOBS **********");
         System.out.println("********************************\n");
