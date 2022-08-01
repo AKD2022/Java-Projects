@@ -29,13 +29,13 @@ public class JavaJobs {
             case "d": break;
         }
 
-
         scan.close();
+        
     }
 
     public static boolean applyJobAllowed() {
         Scanner scan = new Scanner(System.in);
-        
+
         System.out.println("To make sure you are allowed to apply, lets take a quick test");
 
         System.out.print("What is your age?: ");
@@ -45,11 +45,14 @@ public class JavaJobs {
         String exp = scan.nextLine();
 
         if (age < 15 ||!exp.contains("y")){
+            System.out.println("You are not eligible to apply!");
             return false;
         } else {
             return true;
         }
-
+        
     }
+
+    
 
 }
