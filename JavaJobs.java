@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthSplitPaneUI;
 import javax.swing.text.AbstractDocument.BranchElement;
 
 public class JavaJobs {
@@ -77,8 +78,23 @@ public class JavaJobs {
         switch(jobOption) {
             //Game Developer
             case "a": 
+            //Requirments
             System.out.println("Here are the requriments you need to become a game developer: ");
+
             System.out.println("\t- Bachelor's degree in software engineering or computer science");
+            System.out.println("\t- Experience with full-cycle game design");
+            System.out.println("\t- Experience building libraries and APIs.");
+            System.out.println("\t- Be and advanced JAVA developer, including things like building apps from scratch");
+            System.out.println("\t- Knowledge of the latest gaming trends");
+            System.out.println("\t- Strong artistic and technical skills.");
+
+            System.out.print("Do you meet all of these requirments?: ");
+            String requirement = scan.nextLine();
+
+            if (!requirement.contains("y")) {
+                System.out.println("We are sorry, but you are not eligible for this job.");
+                System.exit(0);
+            }
             
             break;
             case "b": break;
