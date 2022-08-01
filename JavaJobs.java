@@ -9,7 +9,9 @@ public class JavaJobs {
         System.out.println("\t- Work a shift (type b)");
         System.out.println("\t- Ask for a raise (type c)");
         System.out.println("\t- Learn about Java (type d)");
+        String option = scan.nextLine();
 
-        
+
+
     }
 }
