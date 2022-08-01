@@ -17,8 +17,11 @@ public class JavaJobs {
 
         switch(option) {
             case "a": 
-            
-                applyJobAllowed();
+
+                Boolean allowed = applyJobAllowed();
+                if (allowed = true){
+
+                }
             
                 break;
             case "b": break;
@@ -30,10 +33,10 @@ public class JavaJobs {
         scan.close();
     }
 
-    public static void applyJobAllowed() {
+    public static boolean applyJobAllowed() {
         System.out.println("To make sure you are allowed to apply, lets take a quick test");
-
-
+        
+        return true;
     }
 
 }
