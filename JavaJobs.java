@@ -17,6 +17,7 @@ public class JavaJobs {
 
         switch(option) {
             case "a": break;
+            case "b": break;
         }
 
 
