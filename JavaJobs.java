@@ -20,7 +20,7 @@ public class JavaJobs {
 
                 Boolean allowed = applyJobAllowed();
                 if (allowed = true){
-
+                    apply();
                 }
             
                 break;
@@ -50,7 +50,10 @@ public class JavaJobs {
         } else {
             return true;
         }
-        
+    }
+
+    public static void apply(){
+
     }
 
     
