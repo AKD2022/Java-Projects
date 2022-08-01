@@ -19,7 +19,7 @@ public class JavaJobs {
             case "a": 
 
                 Boolean allowed = applyJobAllowed();
-                if (allowed = true){
+                if (allowed = true)
                     apply();
                 
                 }
