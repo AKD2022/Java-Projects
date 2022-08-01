@@ -27,7 +27,7 @@ public class JavaJobs {
     }
 
     public static void applyJob() {
-        
+        System.out.println();
     }
 
 }
