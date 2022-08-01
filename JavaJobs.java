@@ -21,7 +21,8 @@ public class JavaJobs {
                 Boolean allowed = applyJobAllowed();
                 if (allowed = true){
                     apply();
-                                }
+                
+                }
             
                 break;
             case "b": break;
