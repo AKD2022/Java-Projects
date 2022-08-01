@@ -16,7 +16,7 @@ public class JavaJobs {
         String option = scan.nextLine();
 
         switch(option) {
-            
+            case "a": break;
         }
 
 
