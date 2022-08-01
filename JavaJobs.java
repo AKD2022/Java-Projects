@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.text.AbstractDocument.BranchElement;
+
 public class JavaJobs {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -72,7 +74,14 @@ public class JavaJobs {
         String jobOption = scan.nextLine();
 
         switch(jobOption) {
-            case "a": 
+            case "a": break;
+            case "b": break;
+            case "c": break;
+            case "d": break;
+            case "e": break;
+            case "f": break;
+            case "g": break;
+            case "h": break;
         }
 
 
