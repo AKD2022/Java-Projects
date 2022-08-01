@@ -61,7 +61,7 @@ public class JavaJobs {
         System.out.println("\t- App Designer, 150k year");
         System.out.println("\t- App Developer, 200k year");
         System.out.println("\t- OS Developer, 350k year");
-        System.out.println("\t- OS Designer, 1");
+        System.out.println("\t- OS Designer, ");
     }
 
     
