@@ -25,4 +25,8 @@ public class JavaJobs {
 
         scan.close();
     }
+
+    public static void applyJob() {
+        
+    }
 }
