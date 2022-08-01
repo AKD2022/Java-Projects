@@ -54,14 +54,14 @@ public class JavaJobs {
 
     public static void apply(){
         System.out.println("Here are the jobs that we have available: ");
-        System.out.println("\t- Game Developer,  200k year");
-        System.out.println("\t- Course Developer, 150k year");
-        System.out.println("\t- Java Web Developer, 125k year");
-        System.out.println("\t- Basic Java Developer, 90k year");
-        System.out.println("\t- App Designer, 150k year");
-        System.out.println("\t- App Developer, 200k year");
-        System.out.println("\t- OS Developer, 350k year");
-        System.out.println("\t- OS Designer, 250k year");
+        System.out.println("\t- Game Developer,  200k year (type a)");
+        System.out.println("\t- Course Developer, 150k year (type b)");
+        System.out.println("\t- Java Web Developer, 125k year (type c)");
+        System.out.println("\t- Basic Java Developer, 90k year (type d)");
+        System.out.println("\t- App Designer, 150k year (type e)");
+        System.out.println("\t- App Developer, 200k year (type f)");
+        System.out.println("\t- OS Developer, 350k year (type g)");
+        System.out.println("\t- OS Designer, 250k year (type h)");
     }
 
     
