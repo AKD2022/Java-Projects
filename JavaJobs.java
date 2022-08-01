@@ -16,7 +16,11 @@ public class JavaJobs {
         String option = scan.nextLine();
 
         switch(option) {
-            case "a": break;
+            case "a": 
+            
+                applyJobAllowed();
+            
+                break;
             case "b": break;
             case "c": break;
             case "d": break;
@@ -26,8 +30,10 @@ public class JavaJobs {
         scan.close();
     }
 
-    public static void applyJob() {
+    public static void applyJobAllowed() {
         System.out.println("To make sure you are allowed to apply, lets take a quick test");
+
+
     }
 
 }
