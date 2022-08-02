@@ -93,7 +93,13 @@ public class JavaJobs {
 
 
             break;
-            case "b": break;
+            case "b": 
+            
+            
+            
+            
+            
+            break;
             case "c": break;
             case "d": break;
             case "e": break;
