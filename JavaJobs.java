@@ -76,7 +76,7 @@ public class JavaJobs {
                 System.out.println("\n\tWhat is one part of a basic structure for developing a game?");
                 String checking = scan.nextLine();
 
-                if (checking.equals("the game interface") || checking.equals("the implementation of the interface") || checking.contains("The game source code")){
+                if (checking.equals("the game interface") || checking.equals("the implementation of the interface") || checking.equals("the game source code")){
                     System.out.println("\nGood job! You are hired! Your check will be mailed to the address you type in: ");
                     String address = scan.nextLine();
 
