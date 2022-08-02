@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthSplitPaneUI;
-import javax.swing.text.AbstractDocument.BranchElement;
-
 public class JavaJobs {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -21,7 +18,7 @@ public class JavaJobs {
         switch(option) {
             case "a": 
 
-                Boolean allowed = applyJobAllowed();
+                boolean allowed = applyJobAllowed();
                 if (allowed = true){
                     apply();
                 }
@@ -40,12 +37,13 @@ public class JavaJobs {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("To make sure you are allowed to apply, lets take a quick test");
+        
+        scan.nextLine();
+        System.out.println("Have you had or have experience with Java (yes/no)");
+        String exp = scan.nextLine();
 
         System.out.print("What is your age?: ");
         int age = scan.nextInt();
-
-        System.out.println("Have you had or have experience with Java (yes/no)");
-        String exp = scan.nextLine();
 
         if (age < 15 ||!exp.contains("y")){
             System.out.println("You are not eligible to apply!");
@@ -61,6 +59,8 @@ public class JavaJobs {
 
     public static void apply(){
         Scanner scan = new Scanner(System.in);
+
+        scan.nextLine();
 
         System.out.println("Here are the jobs that we have available: ");
         System.out.println("\t- Game Developer,  200k year (type a)");
