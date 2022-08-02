@@ -52,7 +52,7 @@ public class JavaJobs {
             //Game Developer
             case "a": 
             //Requirments
-            System.out.println("Here are the requriments you need to become a game developer: ");
+            System.out.println("Here are the requirements you need to become a game developer: ");
 
             System.out.println("\t- Bachelor's degree in software engineering or computer science");
             System.out.println("\t- Experience with full-cycle game design");
@@ -93,10 +93,30 @@ public class JavaJobs {
 
 
             break;
+            
+            
+            
+        
+
+            //Game Designer
             case "b": 
             
             
-            
+            System.out.println("\nHere are the requirements for a Game Designer");
+            System.out.println("\t- A passion for video games");
+            System.out.println("\t- Creativity");
+            System.out.println("\t- Excellent verbal and written communication skills");
+            System.out.println("\t- Technical ability in software technologies and programming languages, such as JAVA");
+            System.out.println("\t- The ability to work in teams and collaborate with others");
+            System.out.println("\t- A passion for gaming\n");
+
+            System.out.println("Do you meet these requirements?");
+            String meet = scan.nextLine();
+
+            if (!meet.contains("y")) {
+                System.out.println("Sorry, you can not apply for this job!");
+                System.exit(0);
+            }
             
             
             break;
