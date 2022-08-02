@@ -20,7 +20,8 @@ public class JavaJobs {
 
                 boolean allowed = applyJobAllowed();
                 if (allowed == true){
-                    apply();
+                    System.out.println("Welcome to the Job applications. ");
+                    apply(allowed);
                 }
 
                 break;
@@ -45,7 +46,7 @@ public class JavaJobs {
         System.out.print("What is your age?: ");
         int age = scan.nextInt();
 
-        if (age < 15 ||!exp.contains("y")){
+        if (age <= 15 ||!exp.contains("y")){
             System.out.println("You are not eligible to apply!");
             scan.close();
             return false;
@@ -57,7 +58,7 @@ public class JavaJobs {
         
     }
 
-    public static void apply(){
+    public static void apply(Boolean allowed){
         Scanner scan = new Scanner(System.in);
 
 
@@ -71,8 +72,8 @@ public class JavaJobs {
         System.out.println("\t- App Developer, 200k year (type g)");
         System.out.println("\t- OS Developer, 350k year (type h)");
         System.out.println("\t- OS Designer, 250k year (type i)");
-        scan.next();
-        
+
+        System.out.println("Which one would you like to do?");
         String jobOption = scan.nextLine();
 
         switch(jobOption) {
