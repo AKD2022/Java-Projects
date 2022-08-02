@@ -19,7 +19,7 @@ public class JavaJobs {
             case "a": 
 
                 boolean allowed = applyJobAllowed();
-                if (allowed = true){
+                if (allowed == true){
                     apply();
                 }
 
@@ -38,7 +38,7 @@ public class JavaJobs {
 
         System.out.println("To make sure you are allowed to apply, lets take a quick test");
         
-        scan.nextLine();
+
         System.out.println("Have you had or have experience with Java (yes/no)");
         String exp = scan.nextLine();
 
@@ -60,7 +60,6 @@ public class JavaJobs {
     public static void apply(){
         Scanner scan = new Scanner(System.in);
 
-        scan.nextLine();
 
         System.out.println("Here are the jobs that we have available: ");
         System.out.println("\t- Game Developer,  200k year (type a)");
@@ -72,7 +71,8 @@ public class JavaJobs {
         System.out.println("\t- App Developer, 200k year (type g)");
         System.out.println("\t- OS Developer, 350k year (type h)");
         System.out.println("\t- OS Designer, 250k year (type i)");
-
+        scan.next();
+        
         String jobOption = scan.nextLine();
 
         switch(jobOption) {
