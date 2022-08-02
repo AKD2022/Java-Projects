@@ -83,6 +83,10 @@ public class JavaJobs {
                     System.out.println("Every month we will mail a check of $" + (200000/12) + " to " + address);
                     scan.close(); 
                 }
+
+                else {
+                    System.out.println("\nYou do not know how to game develop! We are sorry, but you are not accepted");
+                }
               
             }
             
