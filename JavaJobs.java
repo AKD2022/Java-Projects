@@ -17,14 +17,11 @@ public class JavaJobs {
 
         switch(option) {
             case "a": 
+            System.out.println("\n\nWelcome to the Job applications. ");
+            apply();
 
-                boolean allowed = applyJobAllowed();
-                if (allowed == true){
-                    System.out.println("Welcome to the Job applications. ");
-                    apply(allowed);
-                }
-
-                break;
+            break;
+            
             case "b": break;
             case "c": break;
             case "d": break;
@@ -34,33 +31,8 @@ public class JavaJobs {
         
     }
 
-    public static boolean applyJobAllowed() {
+    public static void apply(){
         Scanner scan = new Scanner(System.in);
-
-        System.out.println("To make sure you are allowed to apply, lets take a quick test");
-        
-
-        System.out.println("Have you had or have experience with Java (yes/no)");
-        String exp = scan.nextLine();
-
-        System.out.print("What is your age?: ");
-        int age = scan.nextInt();
-
-        if (age <= 15 ||!exp.contains("y")){
-            System.out.println("You are not eligible to apply!");
-            scan.close();
-            return false;
-        } else {
-            scan.close();
-            return true;
-        }
-
-        
-    }
-
-    public static void apply(Boolean allowed){
-        Scanner scan = new Scanner(System.in);
-
 
         System.out.println("Here are the jobs that we have available: ");
         System.out.println("\t- Game Developer,  200k year (type a)");
@@ -74,9 +46,9 @@ public class JavaJobs {
         System.out.println("\t- OS Designer, 250k year (type i)");
 
         System.out.println("Which one would you like to do?");
-        String jobOption = scan.nextLine();
+        String a = scan.nextLine();
 
-        switch(jobOption) {
+        switch(a) {
             //Game Developer
             case "a": 
             //Requirments
@@ -97,7 +69,8 @@ public class JavaJobs {
             if (!requirement.contains("y")) {
                 System.out.println("We are sorry, but you are not eligible for this job.");
                 System.exit(0);
-            } else if (requirement.contains("ye")) {
+            } 
+            else if (requirement.contains("ye")) {
                 System.out.println("Since we do not know if you are telling the truth or not, you must answer this question correctly: ");
 
                 System.out.println("\tWhat is one part of a basic structure for developing a game?");
@@ -108,7 +81,9 @@ public class JavaJobs {
                     String address = scan.nextLine();
 
                     System.out.println("Every month we will mail a check of $" + (200000/12) + " to " + address);
+                    scan.close(); 
                 }
+              
             }
             
 
@@ -129,6 +104,9 @@ public class JavaJobs {
 
         scan.close();
     }
+
+
+
 
     
 
