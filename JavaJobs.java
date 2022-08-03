@@ -118,6 +118,14 @@ public class JavaJobs {
                 System.exit(0);
             }
             
+            else {
+                System.out.println("Since we do not know if you are lying, we trust you to meet these requirements.\n");
+                System.out.print("Your check will be sent to the address you type in: ");
+                String address = scan.nextLine();
+
+                System.out.println("A check of $" + (150000/12) + " will be mailed to " + address + " you at the end of each month!");
+            }
+            
             
             break;
             case "c": break;
