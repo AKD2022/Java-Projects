@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class JavaJobs {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("********************************");
@@ -31,7 +31,11 @@ public class JavaJobs {
         
     }
 
-    public static void apply(){
+    /**
+     * @throws InterruptedException
+     * 
+     */
+    public static void apply() throws InterruptedException{
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Here are the jobs that we have available: ");
@@ -49,7 +53,7 @@ public class JavaJobs {
         String a = scan.nextLine();
 
         switch(a) {
-            //Game Developer
+            //Cases
             case "a": 
             //Requirments
             System.out.println("Here are the requirements you need to become a game developer: ");
@@ -60,7 +64,7 @@ public class JavaJobs {
             System.out.println("\t- Be and advanced JAVA developer, including things like building apps from scratch");
             System.out.println("\t- Knowledge of the latest gaming trends");
             System.out.println("\t- Strong artistic and technical skills.");
-
+            Thread.sleep(1000);
             //Asking if meets requirments
             System.out.print("Do you meet all of these requirments?: ");
             String requirement = scan.nextLine();
@@ -109,6 +113,8 @@ public class JavaJobs {
             System.out.println("\t- Technical ability in software technologies and programming languages, such as JAVA");
             System.out.println("\t- The ability to work in teams and collaborate with others");
             System.out.println("\t- A passion for gaming\n");
+            Thread.sleep(1000);
+
 
             System.out.println("Do you meet these requirements?");
             String meet = scan.nextLine();
@@ -119,7 +125,7 @@ public class JavaJobs {
             }
             
             else {
-                System.out.println("Since we do not know if you are lying, we trust you to meet these requirements.\n");
+                System.out.println("Since we do not know if you are lying, we trust you to meet these requirements. If you do not, you will be fired!\n");
                 System.out.print("Your check will be sent to the address you type in: ");
                 String address = scan.nextLine();
 
@@ -128,7 +134,29 @@ public class JavaJobs {
             
             
             break;
-            case "c": break;
+            case "c": 
+            
+            System.out.println("Here are the requirements for being a JAVA course designer: ");
+            System.out.println("\t- You must know OOP");
+            System.out.println("\t- You must know the basics");
+            System.out.println("\t- You must be able to teach in a friendly way");
+            System.out.println("\t- You must be able to create different challenges throughout the course\n");
+
+            Thread.sleep(1000);
+
+            System.out.println("Do you meet these requirements? ");
+            String requirements = scan.nextLine();
+            if (!requirements.contains("y")){
+                System.out.println("Sorry, you are not able to apply for this job");
+                System.exit(0);
+            }
+
+
+
+
+
+            
+            break;
             case "d": break;
             case "e": break;
             case "f": break;
