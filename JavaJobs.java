@@ -153,10 +153,11 @@ public class JavaJobs {
 
             else {
                 System.out.println("Since we do not know if you are lying or not, you have to answer this question correct: \n");
-                System.out.println("\tWhat is the error in this line of code?: ");
+                System.out.println("\tWhat is the error in this line of code? Type what is missing: ");
                 System.out.println("System.out.println(''My name is bob'')");
                 String answer = scan.nextLine();
-                if (!answer.equals("forgot the semicolon") || !answer.equals("forgot the semi-colon")) {
+
+                if (!answer.contains("s") || !answer.contains("s")) {
                     System.out.println("Sorry, you can not apply for this job. You are not hired!");
                 } else {
                     System.out.println("Correct! You are hired!");
