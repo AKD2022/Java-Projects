@@ -156,7 +156,7 @@ public class JavaJobs {
                 System.out.println("\tWhat is the error in this line of code?: ");
                 System.out.println("System.out.println(''My name is bob'')");
                 String answer = scan.nextLine();
-                if (!answer.contains("semicolon") || !answer.contains("semi-colon")) {
+                if (!answer.equals("forgot the semicolon") || !answer.equals("forgot the semi-colon")) {
                     System.out.println("Sorry, you can not apply for this job. You are not hired!");
                 } else {
                     System.out.println("Correct! You are hired!");
