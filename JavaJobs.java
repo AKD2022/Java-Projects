@@ -151,6 +151,22 @@ public class JavaJobs {
                 System.exit(0);
             }
 
+            else {
+                System.out.println("Since we do not know if you are lying or not, you have to answer this question correct: \n");
+                System.out.println("\tWhat is the error in this line of code?: ");
+                System.out.println("System.out.println(''My name is bob'')");
+                String answer = scan.nextLine();
+                if (!answer.contains("semicolon") || !answer.contains("semi-colon")) {
+                    System.out.println("Sorry, you can not apply for this job. You are not hired!");
+                } else {
+                    System.out.println("Correct! You are hired!");
+                    System.out.print("Type in your address: ");
+                    String address = scan.nextLine();
+
+                    System.out.println("A check of $" + (150000/12) + " will be mailed to " + address + " at the end of each month");
+                }
+            }
+
 
 
 
