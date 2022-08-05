@@ -157,7 +157,7 @@ public class JavaJobs {
                 System.out.println("System.out.println(''My name is bob'')");
                 String answer = scan.nextLine();
 
-                if (!answer.contains("s") || !answer.contains("s")) {
+                if (!answer.contains("s") || !answer.contains("-")) {
                     System.out.println("Sorry, you can not apply for this job. You are not hired!");
                 } else {
                     System.out.println("Correct! You are hired!");
