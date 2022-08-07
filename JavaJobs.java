@@ -52,7 +52,7 @@ public class JavaJobs {
         System.out.println("Which one would you like to do?");
         String option = scan.nextLine();
 
-        switch(a) {
+        switch(option) {
             //Cases
             case "a": 
             //Requirments
@@ -174,7 +174,21 @@ public class JavaJobs {
 
             
             break;
-            case "d": break;
+            case "d": 
+            
+            System.out.println("\nHere are the requirements for becoming a Java Web Developer");
+            System.out.println("\t- A bachelor's degree in Java");
+            System.out.println("\t- Familiarity with Java");
+            System.out.println("\t- You must know object oriented programming");
+            System.out.println("\t- You must know Software Design and Architecture");
+
+            Thread.sleep(1000);
+
+            System.out.println("\nDo you meet these requirements? ");
+
+
+
+            break;
             case "e": break;
             case "f": break;
             case "g": break;
