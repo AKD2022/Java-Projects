@@ -50,7 +50,7 @@ public class JavaJobs {
         System.out.println("\t- OS Designer, 250k year (type i)");
 
         System.out.println("Which one would you like to do?");
-        String a = scan.nextLine();
+        String option = scan.nextLine();
 
         switch(a) {
             //Cases
