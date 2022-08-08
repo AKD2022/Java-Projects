@@ -56,7 +56,7 @@ public class JavaJobs {
             //Cases
             case "a": 
             //Requirments
-            System.out.println("Here are the requirements you need to become a game developer: ");
+            System.out.println("Here are the requirements you need to become a game developer: \n");
 
             System.out.println("\t- Bachelor's degree in software engineering or computer science");
             System.out.println("\t- Experience with full-cycle game design");
@@ -66,7 +66,7 @@ public class JavaJobs {
             System.out.println("\t- Strong artistic and technical skills.");
             Thread.sleep(1000);
             //Asking if meets requirments
-            System.out.print("Do you meet all of these requirments?: ");
+            System.out.println("\nDo you meet all of these requirments?: ");
             String requirement = scan.nextLine();
 
             //Checking 
@@ -74,13 +74,14 @@ public class JavaJobs {
                 System.out.println("We are sorry, but you are not eligible for this job.");
                 System.exit(0);
             } 
+
             else if (requirement.contains("ye")) {
                 System.out.println("\nSince we do not know if you are telling the truth or not, you must answer this question correctly: ");
 
                 System.out.println("\n\tWhat is one part of a basic structure for developing a game?");
                 String checking = scan.nextLine();
 
-                if (checking.equals("the game interface") || checking.equals("the implementation of the interface") || checking.equals("the game source code")){
+                if (checking.contains("g") && checking.contains("i") || checking.contains("i") && checking.contains("p") && checking.contains("t") || checking.contains("s") && checking.contains("g") && checking.contains("d")){
                     System.out.println("\nGood job! You are hired! Your check will be mailed to the address you type in: ");
                     String address = scan.nextLine();
 
@@ -113,6 +114,7 @@ public class JavaJobs {
             System.out.println("\t- Technical ability in software technologies and programming languages, such as JAVA");
             System.out.println("\t- The ability to work in teams and collaborate with others");
             System.out.println("\t- A passion for gaming\n");
+
             Thread.sleep(1000);
 
 
@@ -126,7 +128,7 @@ public class JavaJobs {
             
             else {
                 System.out.println("Since we do not know if you are lying, we trust you to meet these requirements. If you do not, you will be fired!\n");
-                System.out.print("Your check will be sent to the address you type in: ");
+                System.out.print("Type in your address: ");
                 String address = scan.nextLine();
 
                 System.out.println("A check of $" + (150000/12) + " will be mailed to " + address + " you at the end of each month!");
@@ -144,7 +146,7 @@ public class JavaJobs {
 
             Thread.sleep(1000);
 
-            System.out.println("Do you meet these requirements? ");
+            System.out.println("\nDo you meet these requirements? ");
             String requirements = scan.nextLine();
             if (!requirements.contains("y")){
                 System.out.println("Sorry, you are not able to apply for this job");
@@ -152,19 +154,19 @@ public class JavaJobs {
             }
 
             else {
-                System.out.println("Since we do not know if you are lying or not, you have to answer this question correct: \n");
+                System.out.println("\nSince we do not know if you are lying or not, you have to answer this question correct: \n");
                 System.out.println("\tWhat is the error in this line of code? Type what is missing: ");
                 System.out.println("System.out.println(''My name is bob'')");
                 String answer = scan.nextLine();
 
-                if (!answer.contains("s") || !answer.contains("-")) {
-                    System.out.println("Sorry, you can not apply for this job. You are not hired!");
-                } else {
+                if (answer.equals("Semicolon") || answer.equals("semicolon") || answer.contains("-") || answer.equals("SemiColon")) {
                     System.out.println("Correct! You are hired!");
                     System.out.print("Type in your address: ");
                     String address = scan.nextLine();
 
                     System.out.println("A check of $" + (150000/12) + " will be mailed to " + address + " at the end of each month");
+                } else {
+                    System.out.println("Sorry, you are not applicable for this job");
                 }
             }
 
