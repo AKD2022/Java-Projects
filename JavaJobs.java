@@ -196,13 +196,13 @@ public class JavaJobs {
                 System.out.println("\tWhat does 'www' stand for?");
                 String answer = scan.nextLine();
 
-                if (!answer.equals("World Wide Web") || !answer.equals("world wide web")){
-                    System.out.println("Sorry, you are not applicable for this job");
-                } else {
+                if (answer.equals("World Wide Web") || answer.equals("world wide web") || answer.equals("World wide web")|| answer.equals("world Wide web")|| answer.equals("World Wide web") || answer.equals("world wide Web") || answer.equals("World wide Web")|| answer.equals("world Wide Web")){
                     System.out.print("Congrats! You're hired! Please type in your address: ");
                     String address = scan.nextLine();
 
                     System.out.println("A check of $" + (125000/12) + " will be mailed to " + address + " at the end of each month");
+                } else {
+                    System.out.println("Sorry you are not applicable for this job.");
                 }
             }
 
