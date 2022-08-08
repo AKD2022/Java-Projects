@@ -212,6 +212,7 @@ public class JavaJobs {
 
             break;
             case "e": 
+
             
             System.out.println("\nBasic Java Developer is creating apps somewhat like these, but with a little more logic. (for clarification)");
             Thread.sleep(1000);
@@ -236,7 +237,11 @@ public class JavaJobs {
                 String error = scan.nextLine();
 
                 if (error.contains("f") && error.contains("o") && error.contains("r")) {
-                    System.out.println();
+                    System.out.println("Correct! You are hired!");
+                    System.out.println("Type in your address: ");
+                    String address = scan.nextLine();
+
+                    System.out.println("A check of $" + (90000/12) + " will be mailed to " + address + " at the end of each month");
                 }
             }
 
