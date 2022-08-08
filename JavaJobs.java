@@ -185,7 +185,26 @@ public class JavaJobs {
             Thread.sleep(1000);
 
             System.out.println("\nDo you meet these requirements? ");
+            String b = scan.nextLine();
 
+            if (!b.contains("y")) {
+                System.out.println("Sorry, you cannot apply for this job");
+                System.exit(0);
+            }
+            else {
+                System.out.println("Since we do not know if you are lying or not, here is a question to prove if you are eligible:");
+                System.out.println("\tWhat does 'www' stand for?");
+                String answer = scan.nextLine();
+
+                if (!answer.equals("World Wide Web") || !answer.equals("world wide web")){
+                    System.out.println("Sorry, you are not applicable for this job");
+                } else {
+                    System.out.print("Congrats! You're hired! Please type in your address: ");
+                    String address = scan.nextLine();
+
+                    System.out.println("A check of $" + (125000/12) + " will be mailed to " + address + " at the end of each month");
+                }
+            }
 
 
             break;
