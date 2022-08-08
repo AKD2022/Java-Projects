@@ -211,7 +211,38 @@ public class JavaJobs {
 
 
             break;
-            case "e": break;
+            case "e": 
+            
+            System.out.println("\nBasic Java Developer is creating apps somewhat like these, but with a little more logic. (for clarification)");
+            Thread.sleep(1000);
+
+            System.out.println("Here are the requirements for becoming a Basic Java Developer");
+            System.out.println("\n\t- You must have if statements, loops, variables, arrays, and functions mastered");
+            System.out.println("\t- You must know OOP to an intermediate extent");
+            System.out.println("\t- You must be able to make apps like this simple and easy to understand");
+            
+            System.out.println("\nDo you meet these requirements?");
+            String c = scan.nextLine();
+
+            if (!c.contains("ye")){
+                System.out.println("Sorry, you cannot apply for this job");
+                System.exit(0);
+            } 
+            else {
+                System.out.println("Since we do not know if you are lying or not here is a quick question: ");
+                System.out.println("\tWhat is the problem in this loop? ");
+                System.out.println("while (int i = 0; i < 2; i--");
+
+                String error = scan.nextLine();
+
+                if (error.contains("f") && error.contains("o") && error.contains("r")) {
+                    System.out.println();
+                }
+            }
+
+
+
+            break;
             case "f": break;
             case "g": break;
             case "h": break;
