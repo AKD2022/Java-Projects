@@ -82,7 +82,8 @@ public class JavaJobs {
                 String checking = scan.nextLine();
 
                 if (checking.contains("g") && checking.contains("i") || checking.contains("i") && checking.contains("p") && checking.contains("t") || checking.contains("s") && checking.contains("g") && checking.contains("d")){
-                    System.out.println("\nGood job! You are hired! Your check will be mailed to the address you type in: ");
+                    System.out.println("\nGood job! You are hired!");
+                    System.out.println("What is your address?");
                     String address = scan.nextLine();
 
                     System.out.println("Every month we will mail a check of $" + (200000/12) + " to " + address);
