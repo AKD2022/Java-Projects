@@ -233,11 +233,11 @@ public class JavaJobs {
             else {
                 System.out.println("Since we do not know if you are lying or not here is a quick question: ");
                 System.out.println("\tWhat is the problem in this loop? ");
-                System.out.println("while (int i = 0; i < 2; i--");
+                System.out.println("while (int i = 0; i < 2; i--) {\nSystem.out.println(i)\n}");
 
                 String error = scan.nextLine();
 
-                if (error.contains("f") && error.contains("o") && error.contains("r")) {
+                if (error.contains("f") && error.contains("o") && error.contains("r") || error.contains("f") && error.contains("o") || error.contains("o") && error.contains("r") || error.contains("f") && error.contains("r") ) {
                     System.out.println("Correct! You are hired!");
                     System.out.println("Type in your address: ");
                     String address = scan.nextLine();
