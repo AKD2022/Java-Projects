@@ -222,6 +222,7 @@ public class JavaJobs {
             System.out.println("\t- You must know OOP to an intermediate extent");
             System.out.println("\t- You must be able to make apps like this simple and easy to understand");
             
+            Thread.sleep(1000);
             System.out.println("\nDo you meet these requirements?");
             String c = scan.nextLine();
 
@@ -242,6 +243,11 @@ public class JavaJobs {
                     String address = scan.nextLine();
 
                     System.out.println("A check of $" + (90000/12) + " will be mailed to " + address + " at the end of each month");
+                }
+
+                else {
+                    System.out.println("You are not applicable for this job!");
+                    System.exit(0);
                 }
             }
 
