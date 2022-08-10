@@ -294,7 +294,17 @@ public class JavaJobs {
 
 
             break;
-            case "g": break;
+            case "g": 
+            
+            System.out.println("Here are the requirements for a Java App Developer: \n");
+            
+            System.out.println("\t- ");
+            
+            
+            
+            
+            
+            break;
             case "h": break;
             case "i": break;
         }
