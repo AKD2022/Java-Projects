@@ -233,7 +233,7 @@ public class JavaJobs {
             else {
                 System.out.println("Since we do not know if you are lying or not here is a quick question: ");
                 System.out.println("\tWhat is the problem in this loop? ");
-                System.out.println("while (int i = 0; i < 2; i--) {\nSystem.out.println(i)\n}");
+                System.out.println("while (int i = 0; i < 2; i--) {\n\nSystem.out.println(i)\n\n}");
 
                 String error = scan.nextLine();
 
@@ -254,7 +254,25 @@ public class JavaJobs {
 
 
             break;
-            case "f": break;
+            case "f": 
+            
+            System.out.println("Here are the requirements for a Java App Designer: \n");
+            System.out.println("\t- Strong command over Java J2EE framework.");
+            System.out.println("\t- Comprehensive understanding of software development life cycle (SDLC)");
+            System.out.println("\t- Strong knowledge of the Enterprise Java Bean (EJB) environment.");
+            System.out.println("\t- Knowledge of web services based on the Java technology.");
+            System.out.println("\t- Deep knowledge of Java Servlet and Applets.\n");
+
+            System.out.println("Do you meet these requirements?");
+            String d = scan.nextLine();
+
+            if (!d.contains("y") && !d.contains("e")) {
+               System.out.println("Sorry, you cannot apply for this job"); 
+            }
+
+
+
+            break;
             case "g": break;
             case "h": break;
             case "i": break;
