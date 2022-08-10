@@ -298,8 +298,39 @@ public class JavaJobs {
             
             System.out.println("Here are the requirements for a Java App Developer: \n");
             
-            System.out.println("\t- ");
-            
+            System.out.println("\t- BS/MS degree in Computer Science, Engineering or a related subject");
+            System.out.println("\t- Proven hands-on Software Development experience");
+            System.out.println("\t- Proven working experience in Java development");
+            System.out.println("\t- Hands on experience in designing and developing applications using Java EE platforms");
+
+            Thread.sleep(1000);
+
+            System.out.println("Do you meet these requirements?");
+            String g = scan.nextLine();
+
+            if (!g.contains("y") && !g.contains("e")) {
+                System.out.println("Sorry, you can not apply for this job");
+            } 
+            else {
+                System.out.println("Since we do not know if you are lying or not, you must answer this question: \n");
+                System.out.println("\tWhat does JDK stand for?");
+                String answer = scan.nextLine();
+
+                if (answer.contains("j") && answer.contains("a") && answer.contains("d") && answer.contains("v") && answer.contains("k") && answer.contains ("t")) {
+                    System.out.println("Correct! You are hired!");
+                    System.out.print("Type in your address: ");
+
+                    String address = scan.nextLine();
+
+                    System.out.println("A check of $" + (200000/12) + " to " + address + " at the end of each month");
+                }
+
+                else {
+                    System.out.println("Sorry, you are not applicable for this job!");
+                }
+                
+            }
+                       
             
             
             
