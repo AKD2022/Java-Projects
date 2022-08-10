@@ -263,6 +263,9 @@ public class JavaJobs {
             System.out.println("\t- Knowledge of web services based on the Java technology.");
             System.out.println("\t- Deep knowledge of Java Servlet and Applets.\n");
 
+            Thread.sleep(2000);
+
+
             System.out.println("Do you meet these requirements?");
             String d = scan.nextLine();
 
