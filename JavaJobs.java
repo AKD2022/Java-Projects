@@ -270,6 +270,24 @@ public class JavaJobs {
                System.out.println("Sorry, you cannot apply for this job"); 
             }
 
+            else {
+                System.out.println("Since we do not know whether you are lying or not, you must answer this question right:\n");
+
+                System.out.println("\tWhat is one access modifier?");
+                String makeSure = scan.nextLine();
+
+                if (makeSure.contains("d") && makeSure.contains("t") || makeSure.contains("i") && makeSure.contains("v") || makeSure.contains("o") && makeSure.contains("c") || makeSure.contains("b")) {
+                    System.out.println("Correct! You are hired!");
+                    System.out.print("Type your address: ");
+                    String address = scan.nextLine();
+
+                    System.out.println("A check of $" + (150000/12) + " will be sent to " + address + " at the end of each month");
+                }
+
+                else {
+                    System.out.println("Sorry, but you are not applicable for this job!");
+                }
+            }
 
 
             break;
