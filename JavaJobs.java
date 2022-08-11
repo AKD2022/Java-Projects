@@ -295,7 +295,6 @@ public class JavaJobs {
 
             break;
             case "g": 
-            
             System.out.println("Here are the requirements for a Java App Developer: \n");
             
             System.out.println("\t- BS/MS degree in Computer Science, Engineering or a related subject");
@@ -336,7 +335,45 @@ public class JavaJobs {
             
             
             break;
-            case "h": break;
+
+
+            case "h":
+            
+            System.out.println("Here are the things you need to know for a OS Developer: ");
+            System.out.println("\t- Java Processor: implementation of JVM in hardware");
+            System.out.println("\t- Java Optimized Processors");
+            System.out.println("\t- Embedded Java");
+            System.out.println("\t- picoJava");
+
+
+            Thread.sleep(1000);
+            System.out.println("Do you meet these requirements");
+            String h = scan.nextLine();
+
+            if (!h.contains ("y") && !h.contains ("e")) {
+                System.out.println("Sorry, you are not applicable for this job");
+            }
+            else {
+                System.out.println("Since we do not know if you are lying or not, here is a question you must answer right: ");
+                System.out.println("\t- What does JVM stand for?");
+                String answer = scan.nextLine();
+
+
+                if (answer.contains("j") && answer.contains("a") && answer.contains("v") && answer.contains("r") && answer.contains("m") && answer.contains("h")) {
+                    System.out.println("Correct! You are hired!");
+                    System.out.print("Type in your address: "); 
+                    String address = scan.nextLine();
+
+                    System.out.println("A check of $" + (350000/12) + " will be sent to " + address + " at the end of each month");
+                }
+
+                else {
+                    System.out.println("You are not applicable for this job");
+                }
+            }
+
+
+            break;
             case "i": break;
         }
 
