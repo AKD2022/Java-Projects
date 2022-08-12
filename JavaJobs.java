@@ -237,7 +237,7 @@ public class JavaJobs {
 
                 String error = scan.nextLine();
 
-                if (error.contains("f") && error.contains("o") && error.contains("r") || error.contains("f") && error.contains("o") || error.contains("o") && error.contains("r") || error.contains("f") && error.contains("r") ) {
+                if (error.contains("for") || error.contains("For")) {
                     System.out.println("Correct! You are hired!");
                     System.out.println("Type in your address: ");
                     String address = scan.nextLine();
@@ -279,7 +279,7 @@ public class JavaJobs {
                 System.out.println("\tWhat is one access modifier?");
                 String makeSure = scan.nextLine();
 
-                if (makeSure.contains("d") && makeSure.contains("t") || makeSure.contains("i") && makeSure.contains("v") || makeSure.contains("o") && makeSure.contains("c") || makeSure.contains("b")) {
+                if (makeSure.contains("private") || makeSure.contains("public") || makeSure.contains("default") || makeSure.contains("protected")) {
                     System.out.println("Correct! You are hired!");
                     System.out.print("Type your address: ");
                     String address = scan.nextLine();
@@ -315,7 +315,7 @@ public class JavaJobs {
                 System.out.println("\tWhat does JDK stand for?");
                 String answer = scan.nextLine();
 
-                if (answer.contains("j") && answer.contains("a") && answer.contains("d") && answer.contains("v") && answer.contains("k") && answer.contains ("t")) {
+                if (answer.contains("development")) {
                     System.out.println("Correct! You are hired!");
                     System.out.print("Type in your address: ");
 
@@ -359,7 +359,7 @@ public class JavaJobs {
                 String answer = scan.nextLine();
 
 
-                if (answer.contains("j") && answer.contains("a") && answer.contains("v") && answer.contains("r") && answer.contains("m") && answer.contains("h")) {
+                if (answer.contains("virtual")) {
                     System.out.println("Correct! You are hired!");
                     System.out.print("Type in your address: "); 
                     String address = scan.nextLine();
