@@ -22,7 +22,10 @@ public class JavaJobs {
 
             break;
 
-            case "b": break;
+            case "b": 
+            System.out.println("\n\nWelcome to Work Shift!");
+            workShift();
+            break;
             case "c": break;
             case "d": break;
         }
@@ -440,30 +443,21 @@ public class JavaJobs {
 
         switch(job) {
             //Cases
-            case "a": 
+            case "a":
+            System.out.println(randomNum());
+            
            
-            
-
             break;
-            
-            
-            
-        
-
-            
+          
             case "b": 
             
             
             
             break;
             case "c": 
-            
            
-
-
-
-
-            
+          
+          
             break;
             case "d": 
             
@@ -492,9 +486,12 @@ public class JavaJobs {
             break;
         }
 
-        
+
         scan.close();
     }
     
-
+    public static int randomNum() {
+        int random = (int)(Math.random() * 5) + 1;
+        return random;
+    }
 }
