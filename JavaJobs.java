@@ -403,7 +403,7 @@ public class JavaJobs {
                     System.out.print("Type your address: ");
                     String address = scan.nextLine();
 
-                    System.out.println("A check of $" + (150000/12) + " will be sent to " + address + " at the end of each month");
+                    System.out.println("A check of $" + (250000/12) + " will be sent to " + address + " at the end of each month");
                 }
 
                 else {
