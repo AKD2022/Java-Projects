@@ -423,7 +423,78 @@ public class JavaJobs {
 
 
 
+    public static void workShift(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What are you working as?: ");
+        System.out.println("\t- Game Developer,  200k year (type a)");
+        System.out.println("\t- Game Designer, 150k year (type b)");
+        System.out.println("\t- Course Developer, 150k year (type c)");
+        System.out.println("\t- Java Web Developer, 125k year (type d)");
+        System.out.println("\t- Basic Java Developer, 90k year (type e)");
+        System.out.println("\t- App Designer, 150k year (type f)");
+        System.out.println("\t- App Developer, 200k year (type g)");
+        System.out.println("\t- OS Developer, 350k year (type h)");
+        System.out.println("\t- OS Designer, 250k year (type i)");
 
+        String job = scan.nextLine();
+
+        switch(job) {
+            //Cases
+            case "a": 
+           
+            
+
+            break;
+            
+            
+            
+        
+
+            
+            case "b": 
+            
+            
+            
+            break;
+            case "c": 
+            
+           
+
+
+
+
+            
+            break;
+            case "d": 
+            
+
+
+            break;
+            case "e": 
+
+
+
+            break;
+            case "f": 
+            
+
+            break;
+            case "g": 
+           
+            break;
+
+
+            case "h":
+
+            break;
+            case "i":
+            
+            break;
+        }
+
+        
+        scan.close();
+    }
     
 
 }
