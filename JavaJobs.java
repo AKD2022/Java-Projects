@@ -374,7 +374,45 @@ public class JavaJobs {
 
 
             break;
-            case "i": break;
+            case "i": 
+            
+            System.out.println("Here are the requirements for an OS designer\n");
+
+            System.out.println("\t- Degree in Computer Science or related field");
+            System.out.println("\t- Experience with user interface design, database structures, and statistical analyses");
+            System.out.println("\t- Analytical mindset and good problem-solving skills");
+            System.out.println("\t- Excellent written and verbal communication");
+            System.out.println("\t- Good organizational skills");
+            System.out.println("\t- Ability to work as part of a team\n");
+
+            Thread.sleep(1000);
+
+            System.out.print("Do you meet these requirements?: ");
+            String i = scan.nextLine();
+            if (!i.contains("y")) {
+                System.out.println("Sorry, you cannot apply for this job");
+            }
+            else {
+                System.out.println("Since we do not know whether you are lying or not, you must answer this question right:\n");
+
+                System.out.println("\tWhat is one access modifier?");
+                String makeSure = scan.nextLine();
+
+                if (makeSure.contains("private") || makeSure.contains("public") || makeSure.contains("default") || makeSure.contains("protected")) {
+                    System.out.println("Correct! You are hired!");
+                    System.out.print("Type your address: ");
+                    String address = scan.nextLine();
+
+                    System.out.println("A check of $" + (150000/12) + " will be sent to " + address + " at the end of each month");
+                }
+
+                else {
+                    System.out.println("Sorry, but you are not applicable for this job!");
+                }
+            }
+            
+            
+            break;
         }
 
 
