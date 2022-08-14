@@ -448,42 +448,333 @@ public class JavaJobs {
                 case 1: 
                 switch (randomNum()) {
                     case 1: 
-                    System.out.println("What is the error in this: ");
-                    System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
-                    String error = scan.nextLine();
+                        System.out.println("What is the error in this: ");
+                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        String error = scan.nextLine();
 
-                    if (!error.contains("semicolon") || !error.contains("semi-colon")) {
-                        System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                    } else {
-                        System.out.println("Correct!");
-                    }
+                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct!");
+                        }
                     break;
 
                     case 2: 
                     
-                    System.out.print("What does FPS stand for?: ");
-                    String error2 = scan.nextLine();
+                        System.out.print("What does FPS stand for?: ");
+                        String error2 = scan.nextLine();
 
-                    if (!error2.contains("f") & !error2.contains("m") && !error2.contains("e") && !error2.contains("c") && error2.contains("o")) {
-                        System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                    } else {
-                        System.out.println("Correct");
-                    }
+                        if (!error2.contains("f") & !error2.contains("m") && !error2.contains("e") && !error2.contains("c") && error2.contains("o")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
                     
                     break;
-                    case 3: break;
-                    case 4: break;
-                    case 5: break;
-                }
-                                
+                    case 3: 
+                    
+                        System.out.print("What does JSF stand for?: ");
+                        String error3 = scan.nextLine();
+
+                        if (!error3.contains("v") && !error3.contains("r") && !error3.contains("e") && !error3.contains("a") && !error3.contains("f")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 4: 
+                    
+                        System.out.print("What does GWT stand for?: ");
+                        String error4 = scan.nextLine();
+
+                        if (!error4.contains("g") && !error4.contains("l") && !error4.contains("w") && !error4.contains("t") && !error4.contains("k") && !error4.contains("i")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 5: 
+                    
+                        System.out.println("\t- What does JVM stand for?");
+                        String error5 = scan.nextLine();
+
+                        if (!error5.contains("j") && !error5.contains("a") && !error5.contains("v") && !error5.contains("r") && !error5.contains("t") && !error5.contains("u") && !error5.contains("m") && !error5.contains("c") && !error5.contains("h")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    
+                    break;
+                }               
                 break;
+
                 case 2: 
-                
+                switch (randomNum()) {
+                    case 1: 
+                        System.out.println("What is the error in this: ");
+                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        String error = scan.nextLine();
+
+                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct!");
+                        }
+                    break;
+
+                    case 2: 
+                    
+                        System.out.print("What does FPS stand for?: ");
+                        String error2 = scan.nextLine();
+
+                        if (!error2.contains("f") & !error2.contains("m") && !error2.contains("e") && !error2.contains("c") && error2.contains("o")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 3: 
+                    
+                        System.out.print("What does JSF stand for?: ");
+                        String error3 = scan.nextLine();
+
+                        if (!error3.contains("v") && !error3.contains("r") && !error3.contains("e") && !error3.contains("a") && !error3.contains("f")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 4: 
+                    
+                        System.out.print("What does GWT stand for?: ");
+                        String error4 = scan.nextLine();
+
+                        if (!error4.contains("g") && !error4.contains("l") && !error4.contains("w") && !error4.contains("t") && !error4.contains("k") && !error4.contains("i")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 5: 
+                    
+                        System.out.println("\t- What does JVM stand for?");
+                        String error5 = scan.nextLine();
+
+                        if (!error5.contains("j") && !error5.contains("a") && !error5.contains("v") && !error5.contains("r") && !error5.contains("t") && !error5.contains("u") && !error5.contains("m") && !error5.contains("c") && !error5.contains("h")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    
+                    break;
+                }
                 
                 break;
-                case 3: break;
-                case 4: break;
-                case 5: break;
+                case 3: 
+                switch (randomNum()) {
+                    case 1: 
+                        System.out.println("What is the error in this: ");
+                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        String error = scan.nextLine();
+
+                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct!");
+                        }
+                    break;
+
+                    case 2: 
+                    
+                        System.out.print("What does FPS stand for?: ");
+                        String error2 = scan.nextLine();
+
+                        if (!error2.contains("f") & !error2.contains("m") && !error2.contains("e") && !error2.contains("c") && error2.contains("o")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 3: 
+                    
+                        System.out.print("What does JSF stand for?: ");
+                        String error3 = scan.nextLine();
+
+                        if (!error3.contains("v") && !error3.contains("r") && !error3.contains("e") && !error3.contains("a") && !error3.contains("f")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 4: 
+                    
+                        System.out.print("What does GWT stand for?: ");
+                        String error4 = scan.nextLine();
+
+                        if (!error4.contains("g") && !error4.contains("l") && !error4.contains("w") && !error4.contains("t") && !error4.contains("k") && !error4.contains("i")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 5: 
+                    
+                        System.out.println("\t- What does JVM stand for?");
+                        String error5 = scan.nextLine();
+
+                        if (!error5.contains("j") && !error5.contains("a") && !error5.contains("v") && !error5.contains("r") && !error5.contains("t") && !error5.contains("u") && !error5.contains("m") && !error5.contains("c") && !error5.contains("h")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    
+                    break;
+                }
+                break;
+                case 4: 
+                switch (randomNum()) {
+                    case 1: 
+                        System.out.println("What is the error in this: ");
+                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        String error = scan.nextLine();
+
+                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct!");
+                        }
+                    break;
+
+                    case 2: 
+                    
+                        System.out.print("What does FPS stand for?: ");
+                        String error2 = scan.nextLine();
+
+                        if (!error2.contains("f") & !error2.contains("m") && !error2.contains("e") && !error2.contains("c") && error2.contains("o")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 3: 
+                    
+                        System.out.print("What does JSF stand for?: ");
+                        String error3 = scan.nextLine();
+
+                        if (!error3.contains("v") && !error3.contains("r") && !error3.contains("e") && !error3.contains("a") && !error3.contains("f")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 4: 
+                    
+                        System.out.print("What does GWT stand for?: ");
+                        String error4 = scan.nextLine();
+
+                        if (!error4.contains("g") && !error4.contains("l") && !error4.contains("w") && !error4.contains("t") && !error4.contains("k") && !error4.contains("i")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 5: 
+                    
+                        System.out.println("\t- What does JVM stand for?");
+                        String error5 = scan.nextLine();
+
+                        if (!error5.contains("j") && !error5.contains("a") && !error5.contains("v") && !error5.contains("r") && !error5.contains("t") && !error5.contains("u") && !error5.contains("m") && !error5.contains("c") && !error5.contains("h")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    
+                    break;
+                }
+
+                break;
+
+                case 5: 
+                switch (randomNum()) {
+                    case 1: 
+                        System.out.println("What is the error in this: ");
+                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        String error = scan.nextLine();
+
+                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct!");
+                        }
+                    break;
+
+                    case 2: 
+                    
+                        System.out.print("What does FPS stand for?: ");
+                        String error2 = scan.nextLine();
+
+                        if (!error2.contains("f") & !error2.contains("m") && !error2.contains("e") && !error2.contains("c") && error2.contains("o")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 3: 
+                    
+                        System.out.print("What does JSF stand for?: ");
+                        String error3 = scan.nextLine();
+
+                        if (!error3.contains("v") && !error3.contains("r") && !error3.contains("e") && !error3.contains("a") && !error3.contains("f")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 4: 
+                    
+                        System.out.print("What does GWT stand for?: ");
+                        String error4 = scan.nextLine();
+
+                        if (!error4.contains("g") && !error4.contains("l") && !error4.contains("w") && !error4.contains("t") && !error4.contains("k") && !error4.contains("i")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    break;
+                    case 5: 
+                    
+                        System.out.println("\t- What does JVM stand for?");
+                        String error5 = scan.nextLine();
+
+                        if (!error5.contains("j") && !error5.contains("a") && !error5.contains("v") && !error5.contains("r") && !error5.contains("t") && !error5.contains("u") && !error5.contains("m") && !error5.contains("c") && !error5.contains("h")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else {
+                            System.out.println("Correct");
+                        }
+                    
+                    
+                    break;
+                }
+                
+                break;
             }
             
            
