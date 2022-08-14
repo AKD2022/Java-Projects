@@ -459,7 +459,18 @@ public class JavaJobs {
                     }
                     break;
 
-                    case 2: break;
+                    case 2: 
+                    
+                    System.out.print("What does FPS stand for?: ");
+                    String error2 = scan.nextLine();
+
+                    if (!error2.contains("f") & !error2.contains("m") && !error2.contains("e") && !error2.contains("c") && error2.contains("o")) {
+                        System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                    } else {
+                        System.out.println("Correct");
+                    }
+                    
+                    break;
                     case 3: break;
                     case 4: break;
                     case 5: break;
