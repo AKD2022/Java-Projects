@@ -444,45 +444,130 @@ public class JavaJobs {
         switch(job) {
             //Cases
             case "a":
-            System.out.println(randomNum());
+            switch (randomNum()) {
+                case 1: 
+                switch (randomNum()) {
+                    case 1: 
+                    System.out.println("What is the error in this: ");
+                    System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                    String error = scan.nextLine();
+
+                    if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                        System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                    } else {
+                        System.out.println("Correct!");
+                    }
+                    break;
+
+                    case 2: break;
+                    case 3: break;
+                    case 4: break;
+                    case 5: break;
+                }
+                                
+                break;
+                case 2: 
+                
+                
+                break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
             
            
             break;
           
             case "b": 
-            
-            
+
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
             
             break;
             case "c": 
-           
-          
+            
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
           
             break;
             case "d": 
             
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
 
 
             break;
             case "e": 
 
-
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
 
             break;
             case "f": 
             
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
 
             break;
             case "g": 
            
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
+
             break;
 
 
             case "h":
 
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
+
             break;
             case "i":
             
+            switch (randomNum()) {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+            }
+
             break;
         }
 
@@ -494,4 +579,6 @@ public class JavaJobs {
         int random = (int)(Math.random() * 5) + 1;
         return random;
     }
+
+    
 }
