@@ -552,10 +552,11 @@ public class JavaJobs {
 
                         error2 = error2.toLowerCase();
 
-                        if (!error2.contains("packing internet groper") || !error2.contains("packing inter-network groper")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else {
+                        if (error2.contains("packing internet groper")) {
                             System.out.println("Correct");
+                        }
+                        else {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         }
                     
                     break;
@@ -610,21 +611,15 @@ public class JavaJobs {
                 switch (randomNum()) {
                     case 1: 
                     System.out.println("What is wrong in this: ");
-                        System.out.println("\npublic static int randomNum(){\n\tint random = (Math.random * 5) + 1; \n\treturn random;\n}");
+                        System.out.println("\npublic static int randomNum(){\n\tint random = (Math.random * 5) + 1; \n\t\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("type cast")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else if (!error.contains("type casting")){
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else if (!error.contains("type-casting")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else if (!error.contains("type-cast")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else {
+                        if (error.contains("returning")) {
                             System.out.println("Correct!");
+                        } else {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         }
                     break;
 
