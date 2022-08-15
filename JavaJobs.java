@@ -456,13 +456,13 @@ public class JavaJobs {
                 case 1: 
                 switch (randomNum()) {
                     case 1: 
-                        System.out.println("What is the error in this: ");
+                        System.out.println("What is missing in this: ");
                         System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                        if (!error.contains("semicolon")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct!");
@@ -533,12 +533,12 @@ public class JavaJobs {
                 switch (randomNum()) {
                     case 1: 
                         System.out.println("What is the error in this: ");
-                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        System.out.println("\npublic static void main(String[] args) {\nScanner scan = new Scanner (System.in); \nSystem.out.println(''Type your name: '');\nchar name = scan.nextLine();\nSystem.out.println(''Hello my name is '' + name)");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                        if (!error.contains("string")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct!");
@@ -608,13 +608,13 @@ public class JavaJobs {
                 case 3: 
                 switch (randomNum()) {
                     case 1: 
-                        System.out.println("What is the error in this: ");
+                    System.out.println("What is missing in this: ");
                         System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                        if (!error.contains("semicolon")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct!");
@@ -683,13 +683,13 @@ public class JavaJobs {
                 case 4: 
                 switch (randomNum()) {
                     case 1: 
-                        System.out.println("What is the error in this: ");
+                    System.out.println("What is missing in this: ");
                         System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                        if (!error.contains("semicolon")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct!");
@@ -760,13 +760,13 @@ public class JavaJobs {
                 case 5: 
                 switch (randomNum()) {
                     case 1: 
-                        System.out.println("What is the error in this: ");
+                        System.out.println("What is missing in this: ");
                         System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("semicolon") || !error.contains("semi-colon")) {
+                        if (!error.contains("semicolon")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct!");
@@ -832,7 +832,6 @@ public class JavaJobs {
                     break;
                 }        
                 
-                break;
             }
             
            
