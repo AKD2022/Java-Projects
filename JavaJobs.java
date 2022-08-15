@@ -457,7 +457,7 @@ public class JavaJobs {
                 switch (randomNum()) {
                     case 1: 
                         System.out.println("What is missing in this: ");
-                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        System.out.println("\nif (leftDirection) {\n\tx[0] -= DOT_SIZE\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
@@ -533,7 +533,7 @@ public class JavaJobs {
                 switch (randomNum()) {
                     case 1: 
                         System.out.println("What is the error in this: ");
-                        System.out.println("\npublic static void main(String[] args) {\nScanner scan = new Scanner (System.in); \nSystem.out.println(''Type your name: '');\nchar name = scan.nextLine();\nSystem.out.println(''Hello my name is '' + name)");
+                        System.out.println("\npublic static void main(String[] args) {\n\tScanner scan = new Scanner (System.in); \n\tSystem.out.println(''Type your name: '');\n\tchar name = scan.nextLine();\n\tSystem.out.println(''Hello my name is '' + name)");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
@@ -547,12 +547,12 @@ public class JavaJobs {
 
                     case 2: 
                     
-                        System.out.print("What does FPS stand for?: ");
+                        System.out.print("What does Ping stand for?: ");
                         String error2 = scan.nextLine();
 
                         error2 = error2.toLowerCase();
 
-                        if (!error2.contains("frames per second")) {
+                        if (!error2.contains("packing internet groper") || !error2.contains("packing inter-network groper")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -561,12 +561,12 @@ public class JavaJobs {
                     break;
                     case 3: 
                     
-                    System.out.print("What does JSF stand for?: ");
+                    System.out.print("What is .io stand for: ");
                     String error3 = scan.nextLine();
 
                     error3 = error3.toLowerCase();
                     
-                    if (!error3.contains("java server face")) {
+                    if (!error3.contains("input/output")) {
                         System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                     } else {
                         System.out.println("Correct");
@@ -575,12 +575,12 @@ public class JavaJobs {
                     break;
                     case 4: 
                     
-                        System.out.print("What does GWT stand for?: ");
+                        System.out.print("What does JDK stand for?: ");
                         String error4 = scan.nextLine();
 
                         error4 = error4.toLowerCase();
 
-                        if (!error4.contains("google web toolkit")) {
+                        if (!error4.contains("java development kit")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -588,13 +588,14 @@ public class JavaJobs {
                     
                     break;
                     case 5: 
-                    
-                        System.out.println("\t- What does JVM stand for?");
+                        System.out.println("System.out.println(hello my name is bob);");
+                        System.out.println("\t- What is missing?: ");
+                        
                         String error5 = scan.nextLine();
 
                         error5 = error5.toLowerCase();
 
-                        if (!error5.contains("java virtual machine")) {
+                        if (!error5.contains("double quotes")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -608,13 +609,19 @@ public class JavaJobs {
                 case 3: 
                 switch (randomNum()) {
                     case 1: 
-                    System.out.println("What is missing in this: ");
-                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                    System.out.println("What is wrong in this: ");
+                        System.out.println("\npublic static int randomNum(){\n\tint random = (Math.random * 5) + 1; \n\treturn random;\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("semicolon")) {
+                        if (!error.contains("type cast")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else if (!error.contains("type casting")){
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else if (!error.contains("type-casting")) {
+                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
+                        } else if (!error.contains("type-cast")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct!");
@@ -684,7 +691,7 @@ public class JavaJobs {
                 switch (randomNum()) {
                     case 1: 
                     System.out.println("What is missing in this: ");
-                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
+                        System.out.println("\nif (leftDirection) {\n\tx[0] -= DOT_SIZE\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
