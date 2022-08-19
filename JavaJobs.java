@@ -610,13 +610,13 @@ public class JavaJobs {
                 case 3: 
                 switch (randomNum()) {
                     case 1: 
-                    System.out.println("What is wrong in this: ");
+                    System.out.println("What function is missing?:  ");
                         System.out.println("\npublic static int randomNum(){\n\tint random = (Math.random * 5) + 1; \n\t\n}");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (error.contains("returning")) {
+                        if (error.contains("return")) {
                             System.out.println("Correct!");
                         } else {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
@@ -625,12 +625,12 @@ public class JavaJobs {
 
                     case 2: 
                     
-                        System.out.print("What does FPS stand for?: ");
+                        System.out.print("What does int stand for?: ");
                         String error2 = scan.nextLine();
 
                         error2 = error2.toLowerCase();
 
-                        if (!error2.contains("frames per second")) {
+                        if (!error2.contains("integer")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -639,12 +639,12 @@ public class JavaJobs {
                     break;
                     case 3: 
                     
-                    System.out.print("What does JSF stand for?: ");
+                    System.out.print("What does char stand for?: ");
                     String error3 = scan.nextLine();
 
                     error3 = error3.toLowerCase();
                     
-                    if (!error3.contains("java server face")) {
+                    if (!error3.contains("character")) {
                         System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                     } else {
                         System.out.println("Correct");
@@ -653,12 +653,12 @@ public class JavaJobs {
                     break;
                     case 4: 
                     
-                        System.out.print("What does GWT stand for?: ");
+                        System.out.print("When was Java made?: ");
                         String error4 = scan.nextLine();
 
                         error4 = error4.toLowerCase();
 
-                        if (!error4.contains("google web toolkit")) {
+                        if (!error4.contains("1995")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -667,12 +667,12 @@ public class JavaJobs {
                     break;
                     case 5: 
                     
-                        System.out.println("\t- What does JVM stand for?");
+                        System.out.println("\t- What does void not do in a function (hint: one word)?: ");
                         String error5 = scan.nextLine();
 
                         error5 = error5.toLowerCase();
 
-                        if (!error5.contains("java virtual machine")) {
+                        if (!error5.contains("return")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -685,13 +685,13 @@ public class JavaJobs {
                 case 4: 
                 switch (randomNum()) {
                     case 1: 
-                    System.out.println("What is missing in this: ");
-                        System.out.println("\nif (leftDirection) {\n\tx[0] -= DOT_SIZE\n}");
+                    System.out.println("What is wrong: ");
+                        System.out.println("\nchar points = 21.2");
                         String error = scan.nextLine();
 
                         error = error.toLowerCase();
                         
-                        if (!error.contains("semicolon")) {
+                        if (!error.contains("double")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct!");
@@ -700,12 +700,12 @@ public class JavaJobs {
 
                     case 2: 
                     
-                        System.out.print("What does FPS stand for?: ");
+                        System.out.print("What does JGAG stand for?: ");
                         String error2 = scan.nextLine();
 
                         error2 = error2.toLowerCase();
 
-                        if (!error2.contains("frames per second")) {
+                        if (!error2.contains("java games and gadgets")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -728,12 +728,12 @@ public class JavaJobs {
                     break;
                     case 4: 
                     
-                        System.out.print("What does GWT stand for?: ");
+                        System.out.print("What was java's original meaning?: ");
                         String error4 = scan.nextLine();
 
                         error4 = error4.toLowerCase();
 
-                        if (!error4.contains("google web toolkit")) {
+                        if (!error4.contains("coffee")) {
                             System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
                         } else {
                             System.out.println("Correct");
@@ -757,82 +757,7 @@ public class JavaJobs {
                     break;
                 }     
 
-                break;
-
-                case 5: 
-                switch (randomNum()) {
-                    case 1: 
-                        System.out.println("What is missing in this: ");
-                        System.out.println("\nif (leftDirection) {\nx[0] -= DOT_SIZE\n}");
-                        String error = scan.nextLine();
-
-                        error = error.toLowerCase();
-                        
-                        if (!error.contains("semicolon")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else {
-                            System.out.println("Correct!");
-                        }
-                    break;
-
-                    case 2: 
-                    
-                        System.out.print("What does FPS stand for?: ");
-                        String error2 = scan.nextLine();
-
-                        error2 = error2.toLowerCase();
-
-                        if (!error2.contains("frames per second")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else {
-                            System.out.println("Correct");
-                        }
-                    
-                    break;
-                    case 3: 
-                    
-                    System.out.print("What does JSF stand for?: ");
-                    String error3 = scan.nextLine();
-
-                    error3 = error3.toLowerCase();
-                    
-                    if (!error3.contains("java server face")) {
-                        System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                    } else {
-                        System.out.println("Correct");
-                    }
-                    
-                    break;
-                    case 4: 
-                    
-                        System.out.print("What does GWT stand for?: ");
-                        String error4 = scan.nextLine();
-
-                        error4 = error4.toLowerCase();
-
-                        if (!error4.contains("google web toolkit")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else {
-                            System.out.println("Correct");
-                        }
-                    
-                    break;
-                    case 5: 
-                    
-                        System.out.println("\t- What does JVM stand for?");
-                        String error5 = scan.nextLine();
-
-                        error5 = error5.toLowerCase();
-
-                        if (!error5.contains("java virtual machine")) {
-                            System.out.println("Wrong! We here at JavaJobs are very strict and do not allow any mistakes! Sorry, but you're fired!");
-                        } else {
-                            System.out.println("Correct");
-                        }
-                    
-                    
-                    break;
-                }        
+                default: System.out.println("You're fired");
                 
             }
             
