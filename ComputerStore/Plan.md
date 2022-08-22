@@ -11,4 +11,9 @@ I am going to outline my plan here:
     As I have done a Dealership Workbook in my course (which you can check out here: https://github.com/DrDabIT/Java-Course.git), I am going to do a 
     computer store here
 
+    How this helps:
+    This will help reinforce what I have learned in module 2 so far
+
+    
+
 
