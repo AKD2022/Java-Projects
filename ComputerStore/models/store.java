@@ -2,10 +2,10 @@ package models;
 
 import java.util.ArrayList;
 
-public class ComputerStore {
+public class store {
     ArrayList<Computers> computer;
 
-    public ComputerStore() {
+    public store() {
         this.computer = new ArrayList<Computers>();
     }
 
@@ -13,7 +13,7 @@ public class ComputerStore {
         return new Computers(this.computer.get(index));
     }
 
-    public Computers getComputers(String model) {
+    public Computers getComputer(String model) {
         for (int i = 0; i < this.computer.size(); i++) {
             if (this.computer.get(i).getModel().equals(model)) {
                 return new Computers(this.computer.get(i));
