@@ -6,6 +6,7 @@ public class Computers {
     private int year;
     private String OS;
     private double price;
+    private boolean isAvailable;
 
     public Computers(String model, int year, String OS, double price) {
         if (model.isBlank() || model == null) {
@@ -22,6 +23,14 @@ public class Computers {
         this.year = year;
         this.OS = OS;
         this.price = price;
+        this.isAvailable = true;
+    }
+
+    public Computers(Computers source) {
+        this.model = source.model;
+        this.year = source.year;
+        this.OS = source.OS;
+        this.price = source.price;
     }
 
 
@@ -39,6 +48,10 @@ public class Computers {
 
     public int getYear() {
         return year;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
     }
 
     public void setModel(String model) {
@@ -67,6 +80,10 @@ public class Computers {
         if (year < 0) {
             throw new IllegalArgumentException("INVALID year");
         }
+    }
+
+    public void setAvailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
     }
 
     public String toString() {
