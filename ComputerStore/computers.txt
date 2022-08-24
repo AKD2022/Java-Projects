@@ -1,13 +1,13 @@
-Dell XPS 15, 2021, Windows 11, 1599.99
-Lenovo Thinkpad X1 Carbon, 2021, Windows 10, 1699.99
-Lenovo Thinkpad X1, 2020, Windows 10, 1499.99
-Dell XPS 13, 2021, Windows 11, 1499.99
-Macbook Air M2, 2022, MacOS Monterey, 1399.99
-Mackbook Pro M2, 2022, MacOS Monterey, 1799.99
-Macbook Pro M1 Pro, 2021, MacOS Monterey, 1999.99
-Macbook Pro M1 Max, 2021, MacOS Monterey, 2499.99
-Macbook Air M1, 2021, MacOS Monterey, 999.99
-HP Notebook, 2009, Windows 10, 799.99
-HP Notebook, 2017, Windows 10, 799.99
-HP Notebook, 2022, Windows 11, 999.99
-HP Spectre x360, 2021, Windows 11, 1099.99 
+Dell XPS 15--Windows 11--1599.99
+Lenovo Thinkpad X1--Carbon--Windows 10--1699.99
+Lenovo Thinkpad X1--Windows 10--1499.99
+Dell XPS 13--Windows 11--1499.99
+Macbook Air M2--MacOS Monterey--1399.99
+Mackbook Pro M2--MacOS Monterey--1799.99
+Macbook Pro M1 Pro--MacOS Monterey--1999.99
+Macbook Pro M1 Max--MacOS Monterey--2499.99
+Macbook Air M1--MacOS Monterey--999.99
+HP Notebook--Windows 10--799.99
+HP Notebook--Windows 10--799.99
+HP Notebook--Windows 11--999.99
+HP Spectre x360--Windows 11--1099.99 

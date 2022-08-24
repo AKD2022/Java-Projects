@@ -2,52 +2,52 @@ package models;
 
 import java.util.ArrayList;
 
-public class store {
-    ArrayList<Computers> computer;
+public class Store {
+    ArrayList<Computer> Computers;
 
-    public store() {
-        this.computer = new ArrayList<Computers>();
+    public Store() {
+        this.Computers = new ArrayList<Computer>();
     }
 
-    public Computers getMovie(int index) {
-        return new Computers(this.computer.get(index));
+    public Computer getComputer(int index) {
+        return new Computer(this.Computers.get(index));
     }
 
-    public Computers getComputer(String model) {
-        for (int i = 0; i < this.computer.size(); i++) {
-            if (this.computer.get(i).getModel().equals(model)) {
-                return new Computers(this.computer.get(i));
+    public Computer getComputer(String model) {
+        for (int i = 0; i < this.Computers.size(); i++) {
+            if (this.Computers.get(i).getModel().equals(model)) {
+                return new Computer(this.Computers.get(i));
             }
         }
         return null;
     }
 
-    public void setModel(int index, Computers computers) {
-        this.computer.set(index, new Computers(computers));
+    public void setComputer(int index, Computer Computer) {
+        this.Computers.set(index, new Computer(Computer));
     }
 
-    public void addComputers(Computers computers) {
-        this.computer.add(new Computers(computers));
+    public void addComputer(Computer Computer) {
+        this.Computers.add(new Computer(Computer));
     }
 
     public void action(String model, String action) {
-        if (computer.isEmpty()) {
+        if (Computers.isEmpty()) {
             throw new IllegalStateException("Store not in a valid state to perform action");
         }
-        if (!(action.equals("buy"))) {
-            throw new IllegalArgumentException("action must be buy");
+        if (!(action.equals("sell"))) {
+            throw new IllegalArgumentException("action must be sell");
         }
         if (model == null || model.isBlank()) {
             throw new IllegalArgumentException("model cannot be null/blank");
         }
-        for (int i = 0; i < this.computer.size(); i++) {
-            if (this.computer.get(i).getModel().equals(model)) {
+        for (int i = 0; i < this.Computers.size(); i++) {
+            if (this.Computers.get(i).getModel().equals(model)) {
                 switch (action) {
                     case "sell":
-                    if (!(computer.get(i).isAvailable())) {
-                        throw new IllegalStateException("Cannot sell computer that is bought");
+                    if (!(Computers.get(i).isAvailable())) {
+                        throw new IllegalStateException("Cannot sell Computer that was rented out");
                     }
-                    this.computer.remove(i); break;
+                    this.Computers.remove(i); break;
                 }
             }  
         }
@@ -55,14 +55,11 @@ public class store {
 
     public String toString() {
         String temp = "";
-        for (int i = 0; i < this.computer.size(); i++) {
-            temp += this.computer.get(i).toString();
+        for (int i = 0; i < this.Computers.size(); i++) {
+            temp += this.Computers.get(i).toString();
             temp += "\n\n";
         }
         return temp;
     }
-
-
-
 
 }
