@@ -61,14 +61,17 @@ public class Main {
                     continue;
                  }
                  store.action(name, "sell");
+                 Thread.sleep(4000);
                  System.out.println("\n\nCOMPUTER SUCCESFULLY BOUGHT\n\n");
                  System.out.println("UPDATING STORE...");
                  Thread.sleep(2000); System.out.println(store); break;
                 case "b": store.action(name, "rent"); 
+                Thread.sleep(3000);
                 System.out.println("\n\nCOMPUTER SUCCESFULLY RENTED\n\n");
                 System.out.println("UPDATING STORE...");
                 Thread.sleep(2000); System.out.println(store); break;
                 case "c": store.action(name, "return"); 
+                Thread.sleep(3000);
                 System.out.println("\n\nCOMPUTER SUCCESFULLY RETURNED\n\n"); 
                 System.out.println("UPDATING STORE...");
                 Thread.sleep(2000); 

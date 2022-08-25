@@ -34,8 +34,8 @@ public class Store {
         if (Computers.isEmpty()) {
             throw new IllegalStateException("Store not in a valid state to perform action");
         }
-        if (!(action.equals("sell") || action.equals("rent") || action.equals("return"))) {
-            throw new IllegalArgumentException("action must be sell, rent or return");
+        if (!(action.equals("sell") || action.equals("rent") || action.equals("return") || action.equals("end program"))) {
+            throw new IllegalArgumentException("action must be sell, rent, return, or end");
         }
         if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("name cannot be null/blank");
