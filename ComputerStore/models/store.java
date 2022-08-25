@@ -30,24 +30,31 @@ public class Store {
         this.Computers.add(new Computer(Computer));
     }
 
-    public void action(String model, String action) {
+    public void action(String name, String action) {
         if (Computers.isEmpty()) {
             throw new IllegalStateException("Store not in a valid state to perform action");
         }
-        if (!(action.equals("sell"))) {
-            throw new IllegalArgumentException("action must be sell");
+        if (!(action.equals("sell") || action.equals("rent") || action.equals("return"))) {
+            throw new IllegalArgumentException("action must be sell, rent or return");
         }
-        if (model == null || model.isBlank()) {
-            throw new IllegalArgumentException("model cannot be null/blank");
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("name cannot be null/blank");
         }
         for (int i = 0; i < this.Computers.size(); i++) {
-            if (this.Computers.get(i).getModel().equals(model)) {
+            if (this.Computers.get(i).getModel().equals(name)) {
                 switch (action) {
                     case "sell":
                     if (!(Computers.get(i).isAvailable())) {
-                        throw new IllegalStateException("Cannot sell Computer that was rented out");
+                        throw new IllegalStateException("Cannot sell movie that was rented out");
                     }
                     this.Computers.remove(i); break;
+                    case "rent": this.Computers.get(i).setAvailable(false); break;
+                    case "return": 
+                    if (this.Computers.get(i).setAvailable(true)) {
+                        throw new IllegalStateException("Cannot return none/bought items");
+                    } else {
+                    this.Computers.get(i).setAvailable(true); 
+                    } break;
                 }
             }  
         }
@@ -61,5 +68,6 @@ public class Store {
         }
         return temp;
     }
+
 
 }

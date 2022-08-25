@@ -68,8 +68,9 @@ public class Computer {
         this.price = price;
     }
 
-    public void setAvailable(boolean isAvailable) {
+    public boolean setAvailable(boolean isAvailable) {
         this.isAvailable = isAvailable;
+        return isAvailable;
     }
 
     public String toString() {

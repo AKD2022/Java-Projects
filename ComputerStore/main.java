@@ -39,15 +39,15 @@ public class Main {
      public static void manageComputers() throws InterruptedException {
          Scanner scan = new Scanner(System.in);
          while (true) {
-            System.out.println("\nType 'a' to buy a computer");
+            System.out.println("\nType \n\ta) Buy a computer (Note: You cannnot return a bought computer) \n\tb) Rent a computer \n\tc) Return a rented computer");
             String response = scan.nextLine();
 
-            if (!(response.equals("a"))) {
+            if (!(response.equals("a") || response.equals("b") || response.equals("c"))) {
                 scan.close();
                 break;
             }
 
-            System.out.print("Enter the name of the Computer: ");
+            System.out.print("Enter the name of the computer: ");
             String name = scan.nextLine();
             if (store.getComputer(name) == null) {
                 System.out.println("\n\nThe input you provided is not valid. Please try again\n");
@@ -57,14 +57,25 @@ public class Main {
             switch (response) {
                 case "a":
                  if (!(store.getComputer(name).isAvailable())) {
-                    System.out.println("\n\n\n\nThe Computer is not available for purchase. Please try again\n");
+                    System.out.println("\n\n\n\nThe computer is not available for purchase. Please try again\n");
                     continue;
                  }
-                 store.action(name, "sell"); break;
-
+                 store.action(name, "sell");
+                 System.out.println("\n\nCOMPUTER SUCCESFULLY BOUGHT\n\n");
+                 System.out.println("UPDATING STORE...");
+                 Thread.sleep(2000); System.out.println(store); break;
+                case "b": store.action(name, "rent"); 
+                System.out.println("\n\nCOMPUTER SUCCESFULLY RENTED\n\n");
+                System.out.println("UPDATING STORE...");
+                Thread.sleep(2000); System.out.println(store); break;
+                case "c": store.action(name, "return"); 
+                System.out.println("\n\nCOMPUTER SUCCESFULLY RETURNED\n\n"); 
+                System.out.println("UPDATING STORE...");
+                Thread.sleep(2000); 
+                System.out.println(store);
+                break;
             }
-            System.out.println("\n\nCOMPUTER SUCCESFULLY BOUGHT\n\n" + store);
-            Thread.sleep(2000 );
+        
          }
      }
 

@@ -1,13 +1,30 @@
-Dell XPS 15--Windows 11--1599.99
-Lenovo Thinkpad X1--Carbon--Windows 10--1699.99
-Lenovo Thinkpad X1--Windows 10--1499.99
-Dell XPS 13--Windows 11--1499.99
-Macbook Air M2--MacOS Monterey--1399.99
-Mackbook Pro M2--MacOS Monterey--1799.99
-Macbook Pro M1 Pro--MacOS Monterey--1999.99
-Macbook Pro M1 Max--MacOS Monterey--2499.99
-Macbook Air M1--MacOS Monterey--999.99
-HP Notebook--Windows 10--799.99
-HP Notebook--Windows 10--799.99
-HP Notebook--Windows 11--999.99
+Dell XPS 15--Windows 11--1599.93
+Lenovo Thinkpad X1 Carbon--Windows 10--1699.29
+Lenovo Thinkpad X1--Windows 10--1499.29
+Dell XPS 13--Windows 11--1499.93
+Macbook Air M2--MacOS Monterey--1399.93
+Mackbook Pro M2--MacOS Monterey--1799.19
+Macbook Pro M1 Pro--MacOS Monterey--1999.19
+Macbook Pro M1 Max--MacOS Monterey--2499.92
+Macbook Air M1--MacOS Monterey--999.93
+HP Notebook (2015)--Windows 10--699.96
+HP Notebook (2017)--Windows 10--799.97
+HP Notebook (2021)--Windows 11--999.99
 HP Spectre x360--Windows 11--1099.99 
+Samsung Notebook 4K--Windows 11--1599.99
+Samsung Notebook 2K--Windows 11--1399.98
+Apple iMac--MacOS Monterey--1799.99
+Dell Inspiron Desktop and Monitor (4K with AMD FreeSync)--Windows 11--2609.98
+Alienware Aurora R13 and Dell Monitor (4K with AMD FreeSync)--Windows 11--3504.87
+Mac Mini and Dell Monitor (4K with AMD FreeSync)--MacOS Monterey--2989.78
+Acer Aspire TC and Acer Monitor (4K with AMD FreeSync)--Windows 11--2098.23
+Origin PC and Dell Montior (4K with AMD FreeSync)--Windows 10--2083.23
+Dell XPS 17--Windows 10--1499.99
+RedMi Notebook (2021)--Windows 10--1299.98
+RedMi Notebook (2022)--Windows 11--1599.98
+Samsung Desktop and 4K Monitor (Sceptre)--Windows 11--2938.98
+Alienware Ryzen Edition R10 and 4K Monitor (Sceptre)--Windows 11--2982.32
+
+
+
+
