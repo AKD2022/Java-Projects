@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "Text-Based Adventure Game",
         "Projects",
         "ComputerStore",
-        "Text-Based Adventure Game"
+        "Text-Based_Adventure_Game"
     ]
 }
