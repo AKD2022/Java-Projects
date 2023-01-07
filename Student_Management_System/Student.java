@@ -1,3 +1,4 @@
+import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
 public class Student {
@@ -7,7 +8,7 @@ public class Student {
         private String studentID;
         private String courses = null;
         private int tuitionBalance;
-        private static int costOfCourse = 600;
+        private static int costOfCourse = -600;
         private static int id = 1000;
 
 
@@ -50,15 +51,33 @@ public class Student {
             else { 
                 break; 
             }
+                scan.close();
         }    while (1 != 0);
+        
 
         System.out.println("ENROLLED IN: " + courses);
-        System.out.println("TUITION BALANCE: " + tuitionBalance);
+        
     }
 
     // View balance 
+    public void viewBalance() {
+        System.out.println("Your balance is: $" + tuitionBalance);
+    }
 
     // Pay tuition
+    public void payTuition () {
+        viewBalance();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your payment amount: $");
+        int payment = scan.nextInt();
+        tuitionBalance = tuitionBalance + payment;
+        System.out.println("Thank you for your payment $" + payment);
+        viewBalance();
+
+        scan.close();
+    }
+
+
 
     // Show status
 }

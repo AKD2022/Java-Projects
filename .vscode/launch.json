@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StudentDatabase",
+            "request": "launch",
+            "mainClass": "StudentDatabase",
+            "projectName": "Java-Projects_93e5ae72"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
