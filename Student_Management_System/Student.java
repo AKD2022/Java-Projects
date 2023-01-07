@@ -1,14 +1,13 @@
-import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
 public class Student {
     private String firstName;
         private String lastName;
-        private String  gradeYear;
+        private int  gradeYear;
         private String studentID;
-        private String courses = null;
+        private String courses = "";
         private int tuitionBalance;
-        private static int costOfCourse = -600;
+        private static int costOfCourse = 600;
         private static int id = 1000;
 
 
@@ -21,8 +20,8 @@ public class Student {
         System.out.println("Enter Student last name: ");
         this.lastName = scan.nextLine();
 
-        System.out.println("Enter Student class level:\nFreshmen\nSophmore\nJunior\nSenior\n");
-        this.gradeYear = scan.nextLine();
+        System.out.println("Enter Student class level(number):\n1 - Freshmen\n2 - Sophmore\n3 - Junior\n4 - Senior\n");
+        this.gradeYear = scan.nextInt();
 
         setStudentID();
 
@@ -40,11 +39,11 @@ public class Student {
     // Enroll in courses
     public void enroll() {
         do {
-            System.out.println("Enter course to enroll (0 to quit): ");
+            System.out.println("Enter course to enroll (Q to quit): ");
             Scanner scan = new Scanner(System.in);
             String course = scan.nextLine();
 
-            if (!course.equals("Q") || !course.equals("q")) {
+            if (!course.equals("Q")) {
                 courses = course + "\n" + course;
                 tuitionBalance = tuitionBalance + costOfCourse;
             }
@@ -70,7 +69,7 @@ public class Student {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your payment amount: $");
         int payment = scan.nextInt();
-        tuitionBalance = tuitionBalance + payment;
+        tuitionBalance = tuitionBalance - payment;
         System.out.println("Thank you for your payment $" + payment);
         viewBalance();
 
