@@ -48,4 +48,13 @@ public class OnlineProducts {
         this.price = price;
 
     }
+
+    public boolean setAvailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
+        return isAvailable;
+    }
+
+    pubilc String toString() {
+        
+    }
 }
