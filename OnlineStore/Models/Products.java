@@ -1,13 +1,12 @@
 package Models;
 
-public class OnlineProducts {
+public class Products {
     private String Product;
     private double price;
     private boolean isAvailable;
     
 
-
-    public OnlineProducts (String Product) {
+    public Products (String Product) {
         if (Product == null || Product.isBlank()) {
             throw new IllegalArgumentException("Type of product must be valid");
         } 
@@ -16,7 +15,7 @@ public class OnlineProducts {
         this.isAvailable = true;
     }
 
-    public OnlineProducts (OnlineProducts source) {
+    public Products (Products source) {
         this.Product = source.Product;
         this.price = source.price;
         this.isAvailable = source.isAvailable;
@@ -34,11 +33,11 @@ public class OnlineProducts {
         return isAvailable;
     }
 
-    public void setTypeOfProduct(String typeOfProduct) {
-        if (typeOfProduct == null || typeOfProduct.isBlank()) {
+    public void setTypeOfProduct(String Product) {
+        if (Product == null || Product.isBlank()) {
             throw new IllegalArgumentException("must be valid type of product");
         }
-        this.typeOfProduct = typeOfProduct;
+        this.Product = Product;
     }
 
     public void setPrice(double price) {
@@ -54,8 +53,9 @@ public class OnlineProducts {
     }
 
     public String toString() {
-        return "Product: " + this.product +
+        return "Product: " + this.Product +
         "Price: " + this.price + 
-        "Is Available: " + this.isAvailable;
+        "Is Available: " + (this.isAvailable ? "in-stock" : "out of stock") + "\n";
     }
+
 }
