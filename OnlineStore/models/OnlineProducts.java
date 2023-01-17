@@ -48,18 +48,14 @@ public class OnlineProducts {
         this.price = price;
     }
 
-    public String toString() {
-        return "Product: " + this.product +
-        "Price: " + this.price + 
-        "Is Available: " + this.isAvailable;
-    }
-
     public boolean setAvailable(boolean isAvailable) {
         this.isAvailable = isAvailable;
         return isAvailable;
     }
 
-    pubilc String toString() {
-        
+    public String toString() {
+        return "Product: " + this.product +
+        "Price: " + this.price + 
+        "Is Available: " + this.isAvailable;
     }
 }
