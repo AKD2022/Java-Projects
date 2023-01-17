@@ -1,29 +1,29 @@
 package Models;
 
 public class OnlineProducts {
-    private String typeOfProduct;
+    private String Product;
     private double price;
     private boolean isAvailable;
     
 
 
-    public OnlineProducts (String typeOfProduct) {
-        if (typeOfProduct == null || typeOfProduct.isBlank()) {
+    public OnlineProducts (String Product) {
+        if (Product == null || Product.isBlank()) {
             throw new IllegalArgumentException("Type of product must be valid");
         } 
 
-        this.typeOfProduct = typeOfProduct;
+        this.Product = Product;
         this.isAvailable = true;
     }
 
     public OnlineProducts (OnlineProducts source) {
-        this.typeOfProduct = source.typeOfProduct;
+        this.Product = source.Product;
         this.price = source.price;
         this.isAvailable = source.isAvailable;
     }
 
-    public String getTypeOfProduct() {
-        return typeOfProduct;
+    public String getProduct() {
+        return Product;
     }
 
     public double getPrice() {
@@ -46,7 +46,12 @@ public class OnlineProducts {
             throw new IllegalArgumentException("price cannot be below 0");
         }
         this.price = price;
+    }
 
+    public String toString() {
+        return "Product: " + this.product +
+        "Price: " + this.price + 
+        "Is Available: " + this.isAvailable;
     }
 
     public boolean setAvailable(boolean isAvailable) {
