@@ -1,9 +1,9 @@
 {
     "java.project.sourcePaths": [
         "Text-Based_Adventure_Game",
-        "Text-Based Adventure Game",
+        "Student_Management_System",
         "Projects",
         "ComputerStore",
-        "Student_Management_System"
+        "OnlineStore"
     ]
 }

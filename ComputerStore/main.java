@@ -3,12 +3,12 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import models.Computer;
-import models.Store;
+import models.OnlineStore;
 
 public class Main {
     
 
-    static Store store = new Store();
+    static OnlineStore store = new OnlineStore();
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("\n********************JAVA COMPUTER STORE ********************\n");
