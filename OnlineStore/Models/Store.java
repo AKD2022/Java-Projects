@@ -3,17 +3,17 @@ package Models;
 import java.util.ArrayList;
 
 public class Store {
-    ArrayList<Product> Products;
+    ArrayList<Products> Products;
 
     public Store() {
         this.Products = new ArrayList<Products>();
     }    
 
-    public Product getProducts(int index) {
+    public Products getProducts(int index) {
         return new Products(this.Products.get(index));
     }
 
-    public Product getProducts(String model) {
+    public Products getProducts(String model) {
         for (int i = 0; i < this.Products.size(); i++) {
             if (this.Products.get(i).getProduct().equals(model)) {
                 return new Products(this.Products.get(i));
@@ -22,12 +22,12 @@ public class Store {
         return null;
     }
 
-    public void setProduct (int index, Product Products) {
-        this.Products.set(index, new Products(Product));
+    public void setProduct (int index, Products Products) {
+        this.Products.set(index, new Products(Products));
     }
 
-    public void addProduct (Product Products) {
-        this.Products.add(new Product(Product));
+    public void addProduct (Products Products) {
+        this.Products.add(new Products(Products));
     }
 
     public void action(String Product, String action) {
