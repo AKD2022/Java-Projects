@@ -3,10 +3,10 @@ package Models;
 import java.util.ArrayList;
 
 public class Store {
-    ArrayList<Products> Products;
+    ArrayList<Products> Product;
 
     public Store() {
-        this.Products = new ArrayList<Products>();
+        this.Product = new ArrayList<Products>();
     }    
 
     public Products getProducts(int index) {
@@ -21,6 +21,12 @@ public class Store {
         }
         return null;
     }
+
+    public void setProduct (int index, Products Product) {
+        this.Products.set(index, new Products(Product));
+    }
+
+    
 
     
 }
