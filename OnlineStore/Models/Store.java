@@ -41,7 +41,7 @@ public class Store {
             throw new IllegalArgumentException("product name cannot be null/blank");
         }
         for (int i = 0; i < this.Products.size(); i++) {
-            if (this.Products.get(i).getModel().equals(name)) {
+            if (this.Products.get(i).getProduct().equals(Product)) {
                 switch (action) {
                     case "sell":
                     if (!(Products.get(i).isAvailable())) {
@@ -53,5 +53,13 @@ public class Store {
         }
     }
 
+    public String toString() {
+        String temp = "";
+        for (int i = 0; i < this.Products.size(); i++) {
+            temp += this.Products.get(i).toString();
+            temp += "\n\n";
+        }
+        return temp;
+    }
     
 }
