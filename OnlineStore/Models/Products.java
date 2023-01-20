@@ -1,28 +1,30 @@
 package Models;
 
 public class Products {
-    private String Product;
+    private String product;
     private double price;
     private boolean isAvailable;
-    
 
-    public Products (String Product) {
-        if (Product == null || Product.isBlank()) {
-            throw new IllegalArgumentException("Type of product must be valid");
-        } 
-
-        this.Product = Product;
+    public Products(String product, double price) {
+        if (product == null || product.isBlank()) {
+            throw new IllegalArgumentException("product must contain a value");
+        }
+        if (price < 0) {
+            throw new IllegalArgumentException("Invalid price");
+        }
+        this.product = product;
+        this.price = price;
         this.isAvailable = true;
     }
 
-    public Products (Products source) {
-        this.Product = source.Product;
+    public Products(Products source) {
+        this.product = source.product;
         this.price = source.price;
         this.isAvailable = source.isAvailable;
     }
 
     public String getProduct() {
-        return Product;
+        return product;
     }
 
     public double getPrice() {
@@ -33,16 +35,16 @@ public class Products {
         return isAvailable;
     }
 
-    public void setTypeOfProduct(String Product) {
-        if (Product == null || Product.isBlank()) {
-            throw new IllegalArgumentException("must be valid type of product");
+    public void setProduct(String product) {
+        if (product == null || product.isBlank()) {
+            throw new IllegalArgumentException("product cannot be null/blank");
         }
-        this.Product = Product;
+        this.product = product;
     }
 
     public void setPrice(double price) {
         if (price < 0) {
-            throw new IllegalArgumentException("price cannot be below 0");
+            throw new IllegalArgumentException("invalid price");
         }
         this.price = price;
     }
@@ -53,9 +55,11 @@ public class Products {
     }
 
     public String toString() {
-        return "Product: " + this.Product +
-        "Price: " + this.price + 
-        "Is Available: " + (this.isAvailable ? "in-stock" : "out of stock") + "\n";
+        return "\t product: " + this.product + "\n" +
+               "\t Price: " + this.price + "\n" +
+               "\t Availability: " + (this.isAvailable ? "in-stock" : "out of stock") + "\n";
     }
+
+    
 
 }
