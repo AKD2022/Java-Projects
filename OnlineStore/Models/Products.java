@@ -6,7 +6,7 @@ public class Products {
     private boolean isAvailable;
     private String category;
 
-    public Products(String product, double price, String category) {
+    public Products(String product, String category, double price) {
         if (product == null || product.isBlank()) {
             throw new IllegalArgumentException("product must contain a value");
         }
@@ -72,7 +72,8 @@ public class Products {
     }
 
     public String toString() {
-        return "\t product: " + this.product + "\n" +
+        return "\t Category: " + this.category + "\n" +
+               "\t Product: " + this.product + "\n" +
                "\t Price: " + this.price + "\n" +
                "\t Availability: " + (this.isAvailable ? "in-stock" : "out of stock") + "\n";
     }

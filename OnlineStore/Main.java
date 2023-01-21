@@ -38,9 +38,40 @@ public class Main {
 
      public static void manageProducts() throws InterruptedException {
          Scanner scan = new Scanner(System.in);
-         while (true) {
-            System.out.println("\nType 'a' to start shopping, type 'b' to end");
-            String response = scan.nextLine();
+
+         for (int i = 0; i < 100000000; i++) {
+            if (i >= 1) {
+                System.out.println("\nType 'a' to continue shopping, press enter to end");
+                String response = scan.nextLine();
+                if (!(response.equals("a") || response.equals("b"))) {
+                    scan.close();
+                    break;
+                }
+    
+                System.out.print("Enter the name of the product: ");
+                String name = scan.nextLine();
+                if (store.getProducts(name) == null) {
+                    System.out.println("\n\nThe input you provided is not valid. Please try again\n");
+                    continue;
+                }
+     
+    
+                switch (response) {
+                    case "a":
+                     if (!(store.getProducts(name).isAvailable())) {
+                        System.out.println("\n\n\n\nThe Product is not available for purchase. Please try again\n");
+                        continue;
+                     }
+                     store.action(name, "sell");
+                     Thread.sleep(4000);
+                     System.out.println("\n\nProduct SUCCESFULLY BOUGHT\n\n");
+                     System.out.println("UPDATING STORE...");
+                     Thread.sleep(2000); System.out.println(store); break;
+                }
+            } else {
+                System.out.println("\nType 'a' to start shopping, press enter to end");
+                String response = scan.nextLine();    
+            
 
             if (!(response.equals("a") || response.equals("b"))) {
                 scan.close();
@@ -53,6 +84,7 @@ public class Main {
                 System.out.println("\n\nThe input you provided is not valid. Please try again\n");
                 continue;
             }
+ 
 
             switch (response) {
                 case "a":
@@ -65,14 +97,11 @@ public class Main {
                  System.out.println("\n\nProduct SUCCESFULLY BOUGHT\n\n");
                  System.out.println("UPDATING STORE...");
                  Thread.sleep(2000); System.out.println(store); break;
-                case "b":
-                store.action(name, "end program");
-                System.out.println("Thank you for shopping!");
-                System.exit(0);
             }
         
          }
-     }
+    }
+ }
 
 
 
@@ -95,7 +124,7 @@ public class Main {
          while (scanFile.hasNextLine()) {
              String line = scanFile.nextLine();
              String[] words = line.split("--");
-             store.addProducts(new Products(words[0], Double.parseDouble(words[2])));
+             store.addProducts(new Products(words[0], words[1], Double.parseDouble(words[2])));
          }
          scanFile.close();
      }

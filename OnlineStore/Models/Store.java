@@ -32,7 +32,7 @@ public class Store {
 
     public void action(String name, String action) {
         if (Product.isEmpty()) {
-            throw new IllegalStateException("Store not in a valid state to perform action");
+            throw new IllegalStateException("Store has sold out, please come back later");
         }
         if (!(action.equals("sell") || action.equals("end program"))) {
             throw new IllegalArgumentException("action must be sell or end program");
@@ -45,8 +45,10 @@ public class Store {
                 switch (action) {
                     case "sell":
                     if (!(Product.get(i).isAvailable())) {
-                        throw new IllegalStateException("Cannot sell product that is out of stock");
+                        throw new IllegalStateException("Cannot sell product that is out of stock"); 
                     }
+                    this.Product.remove(i);
+                    break;
                 }
             }  
         }
