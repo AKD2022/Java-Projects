@@ -4,22 +4,28 @@ public class Products {
     private String product;
     private double price;
     private boolean isAvailable;
+    private String category;
 
-    public Products(String product, double price) {
+    public Products(String product, double price, String category) {
         if (product == null || product.isBlank()) {
             throw new IllegalArgumentException("product must contain a value");
+        }
+        if (category == null || category.isBlank()) {
+            throw new IllegalArgumentException("category must contain a value");
         }
         if (price < 0) {
             throw new IllegalArgumentException("Invalid price");
         }
         this.product = product;
         this.price = price;
+        this.category = category;
         this.isAvailable = true;
     }
 
     public Products(Products source) {
         this.product = source.product;
         this.price = source.price;
+        this.category = source.category;
         this.isAvailable = source.isAvailable;
     }
 
@@ -31,6 +37,10 @@ public class Products {
         return price;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
     public boolean isAvailable() {
         return isAvailable;
     }
@@ -40,6 +50,13 @@ public class Products {
             throw new IllegalArgumentException("product cannot be null/blank");
         }
         this.product = product;
+    }
+
+    public void setCategory(String category) {
+        if (category == null || category.isBlank()) {
+            throw new IllegalArgumentException("category cannot be null/blank");
+        }
+        this.category = category;
     }
 
     public void setPrice(double price) {
