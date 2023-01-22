@@ -11,7 +11,7 @@ public class Main {
     static Store store = new Store();
 
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("\n********************JAVA COMPUTER STORE ********************\n");
+        System.out.println("\n********************ONLINE STORE ********************\n");
         try {
             loadProducts("Models/Products.txt");
         } catch (FileNotFoundException e) {
