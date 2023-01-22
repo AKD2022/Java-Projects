@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("\n********************JAVA COMPUTER STORE ********************\n");
         try {
-            loadComputers("Models/Products.txt");
+            loadProducts("Models/Products.txt");
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } finally {
@@ -95,14 +95,14 @@ public class Main {
  }
 
 
-     public static void loadComputers(String fileName) throws FileNotFoundException {
+     public static void loadProducts(String fileName) throws FileNotFoundException {
          FileInputStream fis = new FileInputStream(fileName);
          Scanner scanFile = new Scanner(fis);
 
          while (scanFile.hasNextLine()) {
              String line = scanFile.nextLine();
              String[] words = line.split(", ");
-             store.addProducts(new Products(words[0], words[1], Double.parseDouble(words[2])));
+             store.addProducts(new Products(words[0], words[1], Double.parseDouble(words[2]), Integer.parseInt(words[3])));
          }
          scanFile.close();
      }

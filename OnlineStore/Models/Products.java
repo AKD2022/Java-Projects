@@ -4,9 +4,10 @@ public class Products {
     private String product;
     private double price;
     private boolean isAvailable;
+    private int amount;
     private String category;
 
-    public Products(String product, String category, double price) {
+    public Products(String product, String category, double price, int amount) {
         if (product == null || product.isBlank()) {
             throw new IllegalArgumentException("product must contain a value");
         }
@@ -16,9 +17,13 @@ public class Products {
         if (price < 0) {
             throw new IllegalArgumentException("Invalid price");
         }
+        if (price < 0) {
+            throw new IllegalArgumentException("amount cannot be below 0");
+        }
         this.product = product;
         this.price = price;
         this.category = category;
+        this.amount = amount;
         this.isAvailable = true;
     }
 
@@ -26,6 +31,7 @@ public class Products {
         this.product = source.product;
         this.price = source.price;
         this.category = source.category;
+        this.amount = source.amount;
         this.isAvailable = source.isAvailable;
     }
 
@@ -39,6 +45,10 @@ public class Products {
 
     public String getCategory() {
         return category;
+    }
+
+    public int getAmount() {
+        return amount;
     }
 
     public boolean isAvailable() {
@@ -59,6 +69,13 @@ public class Products {
         this.category = category;
     }
 
+    public void setAmount(int amount) {
+        if (category == null || category.isBlank()) {
+            throw new IllegalArgumentException("Must have amount");
+        }
+        this.amount = amount;
+    }
+
     public void setPrice(double price) {
         if (price < 0) {
             throw new IllegalArgumentException("invalid price");
@@ -75,7 +92,8 @@ public class Products {
         return "\t Category: " + this.category + "\n" +
                "\t Product: " + this.product + "\n" +
                "\t Price: " + this.price + "\n" +
-               "\t Availability: " + (this.isAvailable ? "in-stock" : "out of stock") + "\n";
+               "\t Amount of " + this.product + " you Recieve: " + this.amount + "\n" +
+               "\t Availability: " + (this.isAvailable ? "in-stock" : "out of stock");
     }
 
     
