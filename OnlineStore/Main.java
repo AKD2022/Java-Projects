@@ -24,22 +24,11 @@ public class Main {
 
     }
 
-    /**
-     * Name: manageComputers
-     * Inside the function:
-     *   • 1. Starts a new instance of Scanner;
-     *   • 2. In an infinite loop, the user can choose to a) purchase b) rent c) return d) exit.
-     *   •        case a: ask for the name and sell.
-     *   •        case b: ask for the name and rent.
-     *   •        case c: ask for the name and return.
-     *   • 3. call close() from the Scanner object.
-     * @throws InterruptedException
-     */
-
      public static void manageProducts() throws InterruptedException {
          Scanner scan = new Scanner(System.in);
 
          for (int i = 0; i < 100000000; i++) {
+            //After Loop Ran once
             if (i >= 1) {
                 System.out.println("\nType 'a' to continue shopping, press enter to end");
                 String response = scan.nextLine();
@@ -68,7 +57,9 @@ public class Main {
                      System.out.println("UPDATING STORE...");
                      Thread.sleep(2000); System.out.println(store); break;
                 }
-            } else {
+            }
+            //Before Loop Runs Once (0th time)
+            else {
                 System.out.println("\nType 'a' to start shopping, press enter to end");
                 String response = scan.nextLine();    
             
@@ -104,26 +95,13 @@ public class Main {
  }
 
 
-
-
-
-    /**
-     * Name: loadComputers
-     * @param fileName (String)
-     * @throws FileNotFoundException
-     *
-     * Inside the function:
-     *   • 1. loads Computers from <fileName>.txt.
-     *   • 2. adds all Computers to the store object's Computer field.
-     */
-
      public static void loadComputers(String fileName) throws FileNotFoundException {
          FileInputStream fis = new FileInputStream(fileName);
          Scanner scanFile = new Scanner(fis);
 
          while (scanFile.hasNextLine()) {
              String line = scanFile.nextLine();
-             String[] words = line.split("--");
+             String[] words = line.split(", ");
              store.addProducts(new Products(words[0], words[1], Double.parseDouble(words[2])));
          }
          scanFile.close();

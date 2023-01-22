@@ -1,2 +1,7 @@
-Fresh Apples--Groceries--1.99
-Fresh Bananas--Groceries--1.99
+Fresh Apples, Fruits, $1.99 (5 apples)
+Fresh Bananas, Fruits, $1.99 (5 bananas)
+Fresh Carrots, Fruits, $1.50 (4 carrots)
+Fresh Lettuce, Fruits, $2.99 (5 pounds)
+Fresh Oranges, Fruits, $1.99 (6 oranges)
+Fresh Seedless Grapes, Fruits, $5.99 (4 pounds)
+
